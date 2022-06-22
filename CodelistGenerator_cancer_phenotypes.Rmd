@@ -1,0 +1,619 @@
+---
+title: "ICreating Codelists for wp2 EHDEN using CodelistGenerator"
+output: rmarkdown::html
+editor_options: 
+  chunk_output_type: console
+---
+
+```{r, include = FALSE}
+knitr::opts_chunk$set(
+  collapse = TRUE,
+  comment = "#>"
+)
+```
+
+```{r,  message=FALSE, warning=FALSE,echo=FALSE}
+rm(list = ls())
+# install.packages("remotes")
+remotes::install_github("oxford-pharmacoepi/CodelistGenerator", force = TRUE)
+
+library(here)
+library(readr)
+library(DBI)
+library(RSQLite)
+library(here)
+library(dplyr)
+library(stringr)
+library(DT)
+library(kableExtra)
+library(CodelistGenerator)
+library(Eunomia)
+
+
+```
+
+
+## Creating codelists for cancers
+In this document we are going to generate candidate codelists for the following cancers:
+* breast
+* colorectal
+* lung
+* liver
+* prostate
+* stomach
+* head and neck
+
+**NOTE:** we are only looking for codes in the *condition* domain initially
+
+```{r, eval=FALSE}
+
+# this code loads of the CDM vocabularies that will we need from athena (https://athena.ohdsi.org)
+
+vocab.folder<-c("C:/Users/dnewby/Desktop/Athena Vocabs/") # path to directory of unzipped files
+concept<-read_delim(paste0(vocab.folder,"/CONCEPT.csv"),
+     "\t", escape_double = FALSE, trim_ws = TRUE)
+concept_relationship<-read_delim(paste0(vocab.folder,"/CONCEPT_RELATIONSHIP.csv"),
+     "\t", escape_double = FALSE, trim_ws = TRUE) 
+concept_ancestor<-read_delim(paste0(vocab.folder,"/CONCEPT_ANCESTOR.csv"),
+     "\t", escape_double = FALSE, trim_ws = TRUE)
+concept_synonym<-read_delim(paste0(vocab.folder,"/CONCEPT_SYNONYM.csv"),
+     "\t", escape_double = FALSE, trim_ws = TRUE)
+
+db <- dbConnect(RSQLite::SQLite(), ":memory:")
+dbWriteTable(db, "concept", concept, overwrite=TRUE)
+dbWriteTable(db, "concept_relationship", concept_relationship, overwrite=TRUE)
+dbWriteTable(db, "concept_ancestor", concept_ancestor, overwrite=TRUE)
+dbWriteTable(db, "concept_synonym", concept_synonym, overwrite=TRUE)
+rm(concept,concept_relationship, concept_ancestor, concept_synonym)
+vocabulary_database_schema<-"main"
+
+
+# The structure of each of these tables is described in detail at: https://ohdsi.github.io/CommonDataModel/cdm53.html#Vocabulary_Tables 
+
+```
+
+## Generating a candidate codelist using Codelist Generator: BREAST
+
+```{r, eval=FALSE }
+breastc_codes1<-get_candidate_codes(keywords=c("breast cancer", "breast neoplasm") ,
+                    domains="Condition",
+                    search_synonyms = TRUE,
+                    fuzzy_match = FALSE,
+                    exclude = c("risk", "fear", "benign"),
+                    include_descendants = TRUE,
+                    include_ancestor = FALSE,
+                    db=db,
+                    vocabulary_database_schema =  vocabulary_database_schema)
+```
+
+```{r,  message=FALSE, warning=FALSE }
+
+datatable(breastc_codes1,
+          rownames=FALSE,
+          extensions = 'Buttons',
+          options = list(pageLength = 10,
+                         lengthMenu = c(10, 20,50) ,
+                         dom = 'Bfrtip',
+                         buttons = c('copy', 'csv', 'excel', 'pdf')))
+
+
+```
+
+## Mappings from SNOMED to source vocabularies (read, ICD10)
+
+```{r,  eval=FALSE }
+icd_mappings<-show_mappings(candidate_codelist=breastc_codes1,
+                    source_vocabularies="ICD10CM",
+                    db=db,
+                    vocabulary_database_schema =  vocabulary_database_schema)
+```
+
+```{r,  message=FALSE, warning=FALSE }
+datatable(icd_mappings,
+          rownames=FALSE,
+          extensions = 'Buttons',
+          options = list(pageLength = 10,
+                         lengthMenu = c(10, 20,50) ,
+                         dom = 'Bfrtip',
+                         buttons = c('copy', 'csv', 'excel', 'pdf')))
+```
+
+```{r,  eval=FALSE }
+read_mappings<-show_mappings(candidate_codelist=breastc_codes1,
+                    source_vocabularies="Read",
+                    db=db,
+                    vocabulary_database_schema =  vocabulary_database_schema)
+
+```
+
+```{r,  message=FALSE, warning=FALSE }
+
+datatable(read_mappings,
+          rownames=FALSE,
+          extensions = 'Buttons',
+          options = list(pageLength = 10,
+                         lengthMenu = c(10, 20,50) ,
+                         dom = 'Bfrtip',
+                         buttons = c('copy', 'csv', 'excel', 'pdf')))
+
+```
+
+
+## Generating a candidate codelist using Codelist Generator: COLORECTAL
+
+```{r, eval=FALSE }
+colonc_codes1<-get_candidate_codes(keywords=c("colon cancer", 
+                                               "colon neoplasm",
+                                               "colorectal cancer",
+                                               "colorectal neoplasm" ,
+                                               "rectal cancer",
+                                               "rectal neoplasm",
+                                               "bowel cancer",
+                                               "bowel neoplasm"
+                                               
+                                               ) ,
+                    domains="Condition",
+                    search_synonyms = TRUE,
+                    fuzzy_match = FALSE,
+                    exclude = c("risk",
+                                "fear",
+                                "benign", 
+                                "screening",
+                                "suspected"),
+                    include_descendants = TRUE,
+                    include_ancestor = FALSE,
+                    db=db,
+                    vocabulary_database_schema =  vocabulary_database_schema)
+```
+
+```{r,  message=FALSE, warning=FALSE }
+
+datatable(colonc_codes1,
+          rownames=FALSE,
+          extensions = 'Buttons',
+          options = list(pageLength = 10,
+                         lengthMenu = c(10, 20,50) ,
+                         dom = 'Bfrtip',
+                         buttons = c('copy', 'csv', 'excel', 'pdf')))
+
+
+```
+
+## Mappings from SNOMED to source vocabularies (read, ICD10)
+
+```{r,  eval=FALSE }
+icd_mappings1<-show_mappings(candidate_codelist=colonc_codes1,
+                    source_vocabularies="ICD10CM",
+                    db=db,
+                    vocabulary_database_schema =  vocabulary_database_schema)
+```
+
+```{r,  message=FALSE, warning=FALSE }
+datatable(icd_mappings1,
+          rownames=FALSE,
+          extensions = 'Buttons',
+          options = list(pageLength = 10,
+                         lengthMenu = c(10, 20,50) ,
+                         dom = 'Bfrtip',
+                         buttons = c('copy', 'csv', 'excel', 'pdf')))
+```
+
+```{r,  eval=FALSE }
+read_mappings1<-show_mappings(candidate_codelist=colonc_codes1,
+                    source_vocabularies="Read",
+                    db=db,
+                    vocabulary_database_schema =  vocabulary_database_schema)
+
+```
+
+```{r,  message=FALSE, warning=FALSE }
+
+datatable(read_mappings1,
+          rownames=FALSE,
+          extensions = 'Buttons',
+          options = list(pageLength = 10,
+                         lengthMenu = c(10, 20,50) ,
+                         dom = 'Bfrtip',
+                         buttons = c('copy', 'csv', 'excel', 'pdf')))
+
+```
+
+
+## Generating a candidate codelist using Codelist Generator: LUNG
+
+```{r, eval=FALSE }
+lungc_codes1<-get_candidate_codes(keywords=c("lung cancer", 
+                                               "lung neoplasm" ) ,
+                    domains="Condition",
+                    search_synonyms = TRUE,
+                    fuzzy_match = FALSE,
+                    exclude = c("risk",
+                                "fear",
+                                "benign", 
+                                "screening",
+                                "suspected"),
+                    include_descendants = TRUE,
+                    include_ancestor = FALSE,
+                    db=db,
+                    vocabulary_database_schema =  vocabulary_database_schema)
+```
+
+```{r,  message=FALSE, warning=FALSE }
+
+datatable(lungc_codes1,
+          rownames=FALSE,
+          extensions = 'Buttons',
+          options = list(pageLength = 10,
+                         lengthMenu = c(10, 20,50) ,
+                         dom = 'Bfrtip',
+                         buttons = c('copy', 'csv', 'excel', 'pdf')))
+
+
+```
+
+## Mappings from SNOMED to source vocabularies (read, ICD10)
+
+```{r,  eval=FALSE }
+icd_mappings2<-show_mappings(candidate_codelist=lungc_codes1,
+                    source_vocabularies="ICD10CM",
+                    db=db,
+                    vocabulary_database_schema =  vocabulary_database_schema)
+```
+
+```{r,  message=FALSE, warning=FALSE }
+datatable(icd_mappings2,
+          rownames=FALSE,
+          extensions = 'Buttons',
+          options = list(pageLength = 10,
+                         lengthMenu = c(10, 20,50) ,
+                         dom = 'Bfrtip',
+                         buttons = c('copy', 'csv', 'excel', 'pdf')))
+```
+
+```{r,  eval=FALSE }
+read_mappings2<-show_mappings(candidate_codelist=lungc_codes1,
+                    source_vocabularies="Read",
+                    db=db,
+                    vocabulary_database_schema =  vocabulary_database_schema)
+
+```
+
+```{r,  message=FALSE, warning=FALSE }
+
+datatable(read_mappings2,
+          rownames=FALSE,
+          extensions = 'Buttons',
+          options = list(pageLength = 10,
+                         lengthMenu = c(10, 20,50) ,
+                         dom = 'Bfrtip',
+                         buttons = c('copy', 'csv', 'excel', 'pdf')))
+
+```
+
+
+## Generating a candidate codelist using Codelist Generator: LIVER
+
+```{r, eval=FALSE }
+liverc_codes1<-get_candidate_codes(keywords=c("liver cancer", 
+                                               "liver neoplasm" ) ,
+                    domains="Condition",
+                    search_synonyms = TRUE,
+                    fuzzy_match = FALSE,
+                    exclude = c("risk",
+                                "fear",
+                                "benign", 
+                                "screening",
+                                "suspected"),
+                    include_descendants = TRUE,
+                    include_ancestor = FALSE,
+                    db=db,
+                    vocabulary_database_schema =  vocabulary_database_schema)
+```
+
+```{r,  message=FALSE, warning=FALSE }
+
+datatable(liverc_codes1,
+          rownames=FALSE,
+          extensions = 'Buttons',
+          options = list(pageLength = 10,
+                         lengthMenu = c(10, 20,50) ,
+                         dom = 'Bfrtip',
+                         buttons = c('copy', 'csv', 'excel', 'pdf')))
+
+
+```
+
+## Mappings from SNOMED to source vocabularies (read, ICD10)
+
+```{r,  eval=FALSE }
+icd_mappings3<-show_mappings(candidate_codelist=liverc_codes1,
+                    source_vocabularies="ICD10CM",
+                    db=db,
+                    vocabulary_database_schema =  vocabulary_database_schema)
+```
+
+```{r,  message=FALSE, warning=FALSE }
+datatable(icd_mappings3,
+          rownames=FALSE,
+          extensions = 'Buttons',
+          options = list(pageLength = 10,
+                         lengthMenu = c(10, 20,50) ,
+                         dom = 'Bfrtip',
+                         buttons = c('copy', 'csv', 'excel', 'pdf')))
+```
+
+```{r,  eval=FALSE }
+read_mappings3<-show_mappings(candidate_codelist=liverc_codes1,
+                    source_vocabularies="Read",
+                    db=db,
+                    vocabulary_database_schema =  vocabulary_database_schema)
+
+```
+
+```{r,  message=FALSE, warning=FALSE }
+
+datatable(read_mappings3,
+          rownames=FALSE,
+          extensions = 'Buttons',
+          options = list(pageLength = 10,
+                         lengthMenu = c(10, 20,50) ,
+                         dom = 'Bfrtip',
+                         buttons = c('copy', 'csv', 'excel', 'pdf')))
+
+```
+
+
+## Generating a candidate codelist using Codelist Generator: PROSTATE
+
+```{r, eval=FALSE }
+prostate_codes1<-get_candidate_codes(keywords=c("prostate cancer", 
+                                               "prostate neoplasm" ) ,
+                    domains="Condition",
+                    search_synonyms = TRUE,
+                    fuzzy_match = FALSE,
+                    exclude = c("risk",
+                                "fear",
+                                "benign", 
+                                "screening",
+                                "suspected"),
+                    include_descendants = TRUE,
+                    include_ancestor = FALSE,
+                    db=db,
+                    vocabulary_database_schema =  vocabulary_database_schema)
+```
+
+```{r,  message=FALSE, warning=FALSE }
+
+datatable(prostate_codes1,
+          rownames=FALSE,
+          extensions = 'Buttons',
+          options = list(pageLength = 10,
+                         lengthMenu = c(10, 20,50) ,
+                         dom = 'Bfrtip',
+                         buttons = c('copy', 'csv', 'excel', 'pdf')))
+
+
+```
+
+## Mappings from SNOMED to source vocabularies (read, ICD10)
+
+```{r,  eval=FALSE }
+icd_mappings3<-show_mappings(candidate_codelist=prostate_codes1,
+                    source_vocabularies="ICD10CM",
+                    db=db,
+                    vocabulary_database_schema =  vocabulary_database_schema)
+```
+
+```{r,  message=FALSE, warning=FALSE }
+datatable(icd_mappings3,
+          rownames=FALSE,
+          extensions = 'Buttons',
+          options = list(pageLength = 10,
+                         lengthMenu = c(10, 20,50) ,
+                         dom = 'Bfrtip',
+                         buttons = c('copy', 'csv', 'excel', 'pdf')))
+```
+
+```{r,  eval=FALSE }
+read_mappings4<-show_mappings(candidate_codelist=prostate_codes1,
+                    source_vocabularies="Read",
+                    db=db,
+                    vocabulary_database_schema =  vocabulary_database_schema)
+
+```
+
+```{r,  message=FALSE, warning=FALSE }
+
+datatable(read_mappings4,
+          rownames=FALSE,
+          extensions = 'Buttons',
+          options = list(pageLength = 10,
+                         lengthMenu = c(10, 20,50) ,
+                         dom = 'Bfrtip',
+                         buttons = c('copy', 'csv', 'excel', 'pdf')))
+
+```
+
+
+
+## Generating a candidate codelist using Codelist Generator: STOMACH
+
+```{r, eval=FALSE }
+stomach_codes1<-get_candidate_codes(keywords=c("stomach cancer", 
+                                               "gastric cancer",
+                                               "stomach neoplasm",
+                                               "gastric neoplasm") ,
+                    domains="Condition",
+                    search_synonyms = TRUE,
+                    fuzzy_match = FALSE,
+                    exclude = c("risk",
+                                "fear",
+                                "benign", 
+                                "screening",
+                                "suspected"),
+                    include_descendants = TRUE,
+                    include_ancestor = FALSE,
+                    db=db,
+                    vocabulary_database_schema =  vocabulary_database_schema)
+```
+
+```{r,  message=FALSE, warning=FALSE }
+
+datatable(stomach_codes1,
+          rownames=FALSE,
+          extensions = 'Buttons',
+          options = list(pageLength = 10,
+                         lengthMenu = c(10, 20,50) ,
+                         dom = 'Bfrtip',
+                         buttons = c('copy', 'csv', 'excel', 'pdf')))
+
+
+```
+
+## Mappings from SNOMED to source vocabularies (read, ICD10)
+
+```{r,  eval=FALSE }
+icd_mappings3<-show_mappings(candidate_codelist=stomach_codes1,
+                    source_vocabularies="ICD10CM",
+                    db=db,
+                    vocabulary_database_schema =  vocabulary_database_schema)
+```
+
+```{r,  message=FALSE, warning=FALSE }
+datatable(icd_mappings3,
+          rownames=FALSE,
+          extensions = 'Buttons',
+          options = list(pageLength = 10,
+                         lengthMenu = c(10, 20,50) ,
+                         dom = 'Bfrtip',
+                         buttons = c('copy', 'csv', 'excel', 'pdf')))
+```
+
+```{r,  eval=FALSE }
+read_mappings4<-show_mappings(candidate_codelist=stomach_codes1,
+                    source_vocabularies="Read",
+                    db=db,
+                    vocabulary_database_schema =  vocabulary_database_schema)
+
+```
+
+```{r,  message=FALSE, warning=FALSE }
+
+datatable(read_mappings4,
+          rownames=FALSE,
+          extensions = 'Buttons',
+          options = list(pageLength = 10,
+                         lengthMenu = c(10, 20,50) ,
+                         dom = 'Bfrtip',
+                         buttons = c('copy', 'csv', 'excel', 'pdf')))
+
+```
+
+
+
+
+
+## Generating a candidate codelist using Codelist Generator: HEAD AND NECK
+
+```{r, eval=FALSE }
+headneck_codes1<-get_candidate_codes(keywords=c("mouth cancer", 
+                                               "lip cancer",
+                                               "tongue cancer",
+                                               "laryngeal cancer",
+                                               "throat cancer",
+                                               "oropharynx cancer",
+                                               "hypopharynx cancer" ,
+                                               "nasopharynx cancer",
+                                               "salivary gland cancer" ,
+                                               "nasal cancer" ,
+                                               "sinus cancer" ,
+                                               "nasopharyngeal cancer" ,
+                                               "parotid gland cancer" ,
+                                               "sublingual gland cancer" ,
+                                               "submandibular gland cancer" ,
+                                                "mouth neoplasm", 
+                                               "lip neoplasm",
+                                               "tongue neoplasm",
+                                               "laryngeal neoplasm",
+                                               "throat neoplasm",
+                                               "oropharynx neoplasm",
+                                               "hypopharynx neoplasm" ,
+                                               "nasopharynx neoplasm",
+                                               "salivary gland neoplasm" ,
+                                               "nasal neoplasm" ,
+                                               "sinus neoplasm" ,
+                                               "nasopharyngeal neoplasm" ,
+                                               "parotid gland neoplasm" ,
+                                               "sublingual gland neoplasm" ,
+                                               "submandibular gland neoplasm" 
+                                               
+                                               
+                                               ) ,
+                    domains="Condition",
+                    search_synonyms = TRUE,
+                    fuzzy_match = FALSE,
+                    exclude = c("risk",
+                                "fear",
+                                "benign", 
+                                "screening",
+                                "suspected"),
+                    include_descendants = TRUE,
+                    include_ancestor = FALSE,
+                    db=db,
+                    vocabulary_database_schema =  vocabulary_database_schema)
+```
+
+```{r,  message=FALSE, warning=FALSE }
+
+datatable(headneck_codes1,
+          rownames=FALSE,
+          extensions = 'Buttons',
+          options = list(pageLength = 10,
+                         lengthMenu = c(10, 20,50) ,
+                         dom = 'Bfrtip',
+                         buttons = c('copy', 'csv', 'excel', 'pdf')))
+
+
+```
+
+## Mappings from SNOMED to source vocabularies (read, ICD10)
+
+```{r,  eval=FALSE }
+icd_mappings3<-show_mappings(candidate_codelist=headneck_codes1,
+                    source_vocabularies="ICD10CM",
+                    db=db,
+                    vocabulary_database_schema =  vocabulary_database_schema)
+```
+
+```{r,  message=FALSE, warning=FALSE }
+datatable(icd_mappings3,
+          rownames=FALSE,
+          extensions = 'Buttons',
+          options = list(pageLength = 10,
+                         lengthMenu = c(10, 20,50) ,
+                         dom = 'Bfrtip',
+                         buttons = c('copy', 'csv', 'excel', 'pdf')))
+```
+
+```{r,  eval=FALSE }
+read_mappings4<-show_mappings(candidate_codelist=headneck_codes1,
+                    source_vocabularies="Read",
+                    db=db,
+                    vocabulary_database_schema =  vocabulary_database_schema)
+
+```
+
+```{r,  message=FALSE, warning=FALSE }
+
+datatable(read_mappings4,
+          rownames=FALSE,
+          extensions = 'Buttons',
+          options = list(pageLength = 10,
+                         lengthMenu = c(10, 20,50) ,
+                         dom = 'Bfrtip',
+                         buttons = c('copy', 'csv', 'excel', 'pdf')))
+
+```
+
+
+
