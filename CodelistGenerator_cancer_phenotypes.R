@@ -18,6 +18,7 @@ library(DT)
 library(kableExtra)
 library(CodelistGenerator)
 library(Eunomia)
+library(tictoc)
 
 # get the vocabs -----------------------------
 # from database using or from athena directly
@@ -61,11 +62,10 @@ vocabulary_database_schema<-"main"
 #NOTE we are only looking for codes in the condition domain initially
 
 # create codelist for LIVER CANCER ---------------------------------------
-
+Sys.time()
+tic()
 liver_codes1<-get_candidate_codes(keywords=c("liver cancer", 
-                                              "liver neoplasm",
-                                             "hepatic cancer",
-                                             "hepatic neoplasm") ,
+                                              "liver neoplasm") ,
                                    domains="Condition",
                                    search_synonyms = TRUE,
                                    fuzzy_match = FALSE,
@@ -79,7 +79,7 @@ liver_codes1<-get_candidate_codes(keywords=c("liver cancer",
                                    db=db,
                                    vocabulary_database_schema =  vocabulary_database_schema)
 
-
+toc()
 
 
 
