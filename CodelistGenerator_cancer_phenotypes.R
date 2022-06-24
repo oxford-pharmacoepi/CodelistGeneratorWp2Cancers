@@ -6,6 +6,8 @@
 # install.packages("remotes")
 # remotes::install_github("darwin-eu/CodelistGenerator")
 
+remotes::install_github("oxford-pharmacoepi/CodelistGenerator")
+
 #install packages -----------------------------------
 library(here)
 library(readr)
@@ -81,21 +83,86 @@ liver_codes1<-get_candidate_codes(keywords=c("liver cancer",
 
 toc()
 
+#save output
+write.csv(liver_codes1, "C:/Users/dnewby/OneDrive - Nexus365/Documents/GitHub/CodelistGenerator_cancers/Codelists/liver_cancer_230622.csv")
+
+# create codelist for STOMACH CANCER ---------------------------------------
+Sys.time()
+tic()
+stomach_codes1<-get_candidate_codes(keywords=c("stomach cancer", 
+                                               "gastric cancer",
+                                               "stomach neoplasm",
+                                               "gastric neoplasm") ,
+                                    domains="Condition",
+                                    search_synonyms = TRUE,
+                                    fuzzy_match = FALSE,
+                                    exclude = c("risk",
+                                                "fear",
+                                                "benign", 
+                                                "screening",
+                                                "suspected"),
+                                    include_descendants = TRUE,
+                                    include_ancestor = FALSE,
+                                    db=db,
+                                    vocabulary_database_schema =  vocabulary_database_schema)
 
 
+toc()
+
+write.csv(stomach_codes1, "C:/Users/dnewby/OneDrive - Nexus365/Documents/GitHub/CodelistGenerator_cancers/Codelists/stomach_cancer_230622.csv")
 
 
+# create codelist for HEAD/NECK CANCER ---------------------------------------
+Sys.time()
+tic()
+headneck_codes1<-get_candidate_codes(keywords=c("mouth cancer", 
+                                                "lip cancer",
+                                                "tongue cancer",
+                                                "laryngeal cancer",
+                                                "throat cancer",
+                                                "oropharynx cancer",
+                                                "hypopharynx cancer" ,
+                                                "nasopharynx cancer",
+                                                "salivary gland cancer" ,
+                                                "nasal cancer" ,
+                                                "sinus cancer" ,
+                                                "nasopharyngeal cancer" ,
+                                                "parotid gland cancer" ,
+                                                "sublingual gland cancer" ,
+                                                "submandibular gland cancer" ,
+                                                "mouth neoplasm", 
+                                                "lip neoplasm",
+                                                "tongue neoplasm",
+                                                "laryngeal neoplasm",
+                                                "throat neoplasm",
+                                                "oropharynx neoplasm",
+                                                "hypopharynx neoplasm" ,
+                                                "nasopharynx neoplasm",
+                                                "salivary gland neoplasm" ,
+                                                "nasal neoplasm" ,
+                                                "sinus neoplasm" ,
+                                                "nasopharyngeal neoplasm" ,
+                                                "parotid gland neoplasm" ,
+                                                "sublingual gland neoplasm" ,
+                                                "submandibular gland neoplasm" 
+                                                
+                                                
+) ,
+domains="Condition",
+search_synonyms = TRUE,
+fuzzy_match = FALSE,
+exclude = c("risk",
+            "fear",
+            "benign", 
+            "screening",
+            "suspected"),
+include_descendants = TRUE,
+include_ancestor = FALSE,
+db=db,
+vocabulary_database_schema =  vocabulary_database_schema)
 
+toc()
 
-
-
-
-
-
-
-
-
-
-
+write.csv(headneck_codes1, "C:/Users/dnewby/OneDrive - Nexus365/Documents/GitHub/CodelistGenerator_cancers/Codelists/headneck_cancer_230622.csv")
 
 
