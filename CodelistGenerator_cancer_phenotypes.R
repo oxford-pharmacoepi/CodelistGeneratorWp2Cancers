@@ -4,9 +4,8 @@
 
 # install codelist generator from darwin (only once) --------------------------
 # install.packages("remotes")
-# remotes::install_github("darwin-eu/CodelistGenerator")
+#remotes::install_github("darwin-eu/CodelistGenerator")
 
-remotes::install_github("oxford-pharmacoepi/CodelistGenerator")
 
 #install packages -----------------------------------
 library(here)
@@ -65,34 +64,36 @@ vocabulary_database_schema<-"main"
 
 # create codelist for LIVER CANCER ---------------------------------------
 Sys.time()
+
 tic()
-liver_codes1<-get_candidate_codes(keywords=c("liver cancer", 
-                                              "liver neoplasm") ,
-                                   domains="Condition",
-                                   search_synonyms = TRUE,
-                                   fuzzy_match = FALSE,
-                                   exclude = c("risk",
-                                               "fear",
-                                               "benign", 
-                                               "screening",
-                                               "suspected"),
-                                   include_descendants = TRUE,
-                                   include_ancestor = FALSE,
-                                   db=db,
-                                   vocabulary_database_schema =  vocabulary_database_schema)
+liver_codes1<-get_candidate_codes(keywords=c( "neoplasm of liver",
+                                              "malignant neoplasm of liver") ,
+                                  domains="Condition",
+                                  search_synonyms = TRUE,
+                                  fuzzy_match = FALSE,
+                                  exclude = c("risk",
+                                              "fear",
+                                              "benign", 
+                                              "screening",
+                                              "suspected",
+                                              "secondary",
+                                              "in situ"),
+                                  include_descendants = TRUE,
+                                  include_ancestor = FALSE,
+                                  db=db,
+                                  vocabulary_database_schema =  vocabulary_database_schema)
 
 toc()
 
-#save output
-write.csv(liver_codes1, "C:/Users/dnewby/OneDrive - Nexus365/Documents/GitHub/CodelistGenerator_cancers/Codelists/liver_cancer_230622.csv")
+write.csv(liver_codes1, "C:/Users/dnewby/OneDrive - Nexus365/Documents/GitHub/CodelistGenerator_cancers/Codelists/liver_cancer_110722.csv")
+
 
 # create codelist for STOMACH CANCER ---------------------------------------
+#https://training.seer.cancer.gov/ugi/abstract-code-stage/codes.html
 Sys.time()
 tic()
-stomach_codes1<-get_candidate_codes(keywords=c("stomach cancer", 
-                                               "gastric cancer",
-                                               "stomach neoplasm",
-                                               "gastric neoplasm") ,
+stomach_codes2<-get_candidate_codes(keywords=c("malignant tumor of stomach",
+                                               "neoplasm of stomach") ,
                                     domains="Condition",
                                     search_synonyms = TRUE,
                                     fuzzy_match = FALSE,
@@ -100,7 +101,9 @@ stomach_codes1<-get_candidate_codes(keywords=c("stomach cancer",
                                                 "fear",
                                                 "benign", 
                                                 "screening",
-                                                "suspected"),
+                                                "suspected",
+                                                "secondary",
+                                                "in situ"),
                                     include_descendants = TRUE,
                                     include_ancestor = FALSE,
                                     db=db,
@@ -109,45 +112,64 @@ stomach_codes1<-get_candidate_codes(keywords=c("stomach cancer",
 
 toc()
 
-write.csv(stomach_codes1, "C:/Users/dnewby/OneDrive - Nexus365/Documents/GitHub/CodelistGenerator_cancers/Codelists/stomach_cancer_230622.csv")
+
+
+
+write.csv(stomach_codes2, "C:/Users/dnewby/OneDrive - Nexus365/Documents/GitHub/CodelistGenerator_cancers/Codelists/stomach_cancer_110722.csv")
 
 
 # create codelist for HEAD/NECK CANCER ---------------------------------------
+#https://training.seer.cancer.gov/head-neck/abstract-code-stage/codes.html
 Sys.time()
 tic()
-headneck_codes1<-get_candidate_codes(keywords=c("mouth cancer", 
-                                                "lip cancer",
-                                                "tongue cancer",
-                                                "laryngeal cancer",
-                                                "throat cancer",
-                                                "oropharynx cancer",
-                                                "hypopharynx cancer" ,
-                                                "nasopharynx cancer",
-                                                "salivary gland cancer" ,
-                                                "nasal cancer" ,
-                                                "sinus cancer" ,
-                                                "nasopharyngeal cancer" ,
-                                                "parotid gland cancer" ,
-                                                "sublingual gland cancer" ,
-                                                "submandibular gland cancer" ,
-                                                "mouth neoplasm", 
-                                                "lip neoplasm",
-                                                "tongue neoplasm",
-                                                "laryngeal neoplasm",
-                                                "throat neoplasm",
-                                                "oropharynx neoplasm",
-                                                "hypopharynx neoplasm" ,
-                                                "nasopharynx neoplasm",
-                                                "salivary gland neoplasm" ,
-                                                "nasal neoplasm" ,
-                                                "sinus neoplasm" ,
-                                                "nasopharyngeal neoplasm" ,
-                                                "parotid gland neoplasm" ,
-                                                "sublingual gland neoplasm" ,
-                                                "submandibular gland neoplasm" 
-                                                
-                                                
-) ,
+headneck_codes1<-get_candidate_codes(keywords=c(
+  
+  "malignant neoplasm of lip, oral cavity and pharynx" ,
+  "malignant tumor of lip" ,
+  "neoplasm of lip" ,
+  "malignant tumor of base of tongue" ,
+  "neoplasm of base of tongue" ,
+  "malignant tumor of tongue" ,
+  "neoplasm of tongue" ,
+  "malignant tumor of gum" ,
+  "neoplasm of gum" ,
+  "malignant tumor of floor of mouth" ,
+  "neoplasm of floor of mouth" ,
+  "malignant tumor of palate" ,
+  "neoplasm of palate" ,
+  "nalignant tumor of buccal mucosa" ,
+  "malignant tumor of oral cavity" ,
+  "tumor of oral cavity",
+  "malignant tumor of parotid gland" ,
+  "neoplasm of parotid gland" ,
+  "malignant tumor of major salivary gland" ,
+  "neoplasm of major salivary gland" ,
+  "malignant tumor of tonsil" ,
+  "neoplasm of tonsil" ,
+  "malignant tumor of oropharynx" ,
+  "neoplasm of oropharynx" ,
+  "malignant tumor of nasopharynx" ,
+  "neoplasm of nasopharynx" ,
+  "malignant tumor of pyriform fossa" ,
+  "neoplasm of pyriform sinus" ,
+  "malignant tumor of postcricoid region" ,
+  "neoplasm of postcricoid region" ,
+  "malignant tumor of pharynx" ,
+  "malignant tumor of head and neck" ,
+  "malignant tumor of nasal cavity" ,
+  "neoplasm of nasal cavity" ,
+  "malignant tumor of maxillary sinus" ,
+  "malignant tumor of nasal sinuses" ,
+  "neoplasm of accessory sinus" ,
+  "malignant tumor of larynx" ,
+  "malignant tumor of neck" ,
+  "malignant tumor of head and neck" ,
+  "neoplasm of head and neck" ,
+  "malignant tumor of thyroid gland" ,
+ "neoplasm of thyroid gland"
+  
+
+                            ) ,
 domains="Condition",
 search_synonyms = TRUE,
 fuzzy_match = FALSE,
@@ -155,7 +177,9 @@ exclude = c("risk",
             "fear",
             "benign", 
             "screening",
-            "suspected"),
+            "suspected",
+            "secondary",
+            "in situ"),
 include_descendants = TRUE,
 include_ancestor = FALSE,
 db=db,
