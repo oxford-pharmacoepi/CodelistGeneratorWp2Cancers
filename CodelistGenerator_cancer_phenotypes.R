@@ -63,40 +63,58 @@ vocabulary_database_schema<-"main"
 #NOTE we are only looking for codes in the condition domain initially
 
 # create codelist for LIVER CANCER ---------------------------------------
+# criteria:
+# Malignant cancer only
+# No codes for benign/ in situ 
+# No codes for secondary cancer
 Sys.time()
 
 tic()
-liver_codes1<-get_candidate_codes(keywords=c( "neoplasm of liver",
-                                              "malignant neoplasm of liver") ,
+liver_codes1<-getCandidateCodes(keywords=c( "malignant neoplasm of liver") ,
                                   domains="Condition",
-                                  search_synonyms = TRUE,
-                                  fuzzy_match = FALSE,
+                                searchSynonyms = TRUE,
+                                  fuzzyMatch = FALSE,
                                   exclude = c("risk",
                                               "fear",
                                               "benign", 
                                               "screening",
                                               "suspected",
                                               "secondary",
-                                              "in situ"),
-                                  include_descendants = TRUE,
-                                  include_ancestor = FALSE,
+                                              "in situ",
+                                              "uterine body"),
+                                  includeDescendants = TRUE,
+                                  includeAncestor = FALSE,
                                   db=db,
-                                  vocabulary_database_schema =  vocabulary_database_schema)
+                                vocabularyDatabaseSchema =  vocabulary_database_schema)
 
 toc()
 
 write.csv(liver_codes1, "C:/Users/dnewby/OneDrive - Nexus365/Documents/GitHub/CodelistGenerator_cancers/Codelists/liver_cancer_110722.csv")
 
 
+
+#check candidate codes
+readMappings<-showMappings(candidateCodelist=liver_codes1,
+                          sourceVocabularies="Read",
+                          db=db,
+                          vocabularyDatabaseSchema =  vocabulary_database_schema)
+
+
+
+
+
 # create codelist for STOMACH CANCER ---------------------------------------
 #https://training.seer.cancer.gov/ugi/abstract-code-stage/codes.html
+# criteria:
+# Malignant cancer only
+# No codes for benign/ in situ 
+# No codes for secondary cancer
 Sys.time()
 tic()
-stomach_codes2<-get_candidate_codes(keywords=c("malignant tumor of stomach",
-                                               "neoplasm of stomach") ,
+stomach_codes2<-getCandidateCodes(keywords=c("malignant tumor of stomach") ,
                                     domains="Condition",
-                                    search_synonyms = TRUE,
-                                    fuzzy_match = FALSE,
+                                    searchSynonyms = TRUE,
+                                    fuzzyMatch = FALSE,
                                     exclude = c("risk",
                                                 "fear",
                                                 "benign", 
@@ -104,12 +122,10 @@ stomach_codes2<-get_candidate_codes(keywords=c("malignant tumor of stomach",
                                                 "suspected",
                                                 "secondary",
                                                 "in situ"),
-                                    include_descendants = TRUE,
-                                    include_ancestor = FALSE,
+                                    includeDescendants = TRUE,
+                                    includeAncestor = FALSE,
                                     db=db,
-                                    vocabulary_database_schema =  vocabulary_database_schema)
-
-
+                                    vocabularyDatabaseSchema =  vocabulary_database_schema)
 toc()
 
 
@@ -120,70 +136,56 @@ write.csv(stomach_codes2, "C:/Users/dnewby/OneDrive - Nexus365/Documents/GitHub/
 
 # create codelist for HEAD/NECK CANCER ---------------------------------------
 #https://training.seer.cancer.gov/head-neck/abstract-code-stage/codes.html
+# criteria:
+# Malignant cancer only
+# No codes for benign/ in situ 
+# No codes for secondary cancer
 Sys.time()
 tic()
-headneck_codes1<-get_candidate_codes(keywords=c(
+headneck_codes1<-getCandidateCodes(keywords=c(
   
   "malignant neoplasm of lip, oral cavity and pharynx" ,
   "malignant tumor of lip" ,
-  "neoplasm of lip" ,
   "malignant tumor of base of tongue" ,
-  "neoplasm of base of tongue" ,
   "malignant tumor of tongue" ,
-  "neoplasm of tongue" ,
   "malignant tumor of gum" ,
-  "neoplasm of gum" ,
   "malignant tumor of floor of mouth" ,
-  "neoplasm of floor of mouth" ,
   "malignant tumor of palate" ,
-  "neoplasm of palate" ,
   "nalignant tumor of buccal mucosa" ,
   "malignant tumor of oral cavity" ,
-  "tumor of oral cavity",
   "malignant tumor of parotid gland" ,
-  "neoplasm of parotid gland" ,
   "malignant tumor of major salivary gland" ,
-  "neoplasm of major salivary gland" ,
   "malignant tumor of tonsil" ,
-  "neoplasm of tonsil" ,
   "malignant tumor of oropharynx" ,
-  "neoplasm of oropharynx" ,
   "malignant tumor of nasopharynx" ,
-  "neoplasm of nasopharynx" ,
   "malignant tumor of pyriform fossa" ,
-  "neoplasm of pyriform sinus" ,
   "malignant tumor of postcricoid region" ,
-  "neoplasm of postcricoid region" ,
   "malignant tumor of pharynx" ,
   "malignant tumor of head and neck" ,
   "malignant tumor of nasal cavity" ,
-  "neoplasm of nasal cavity" ,
   "malignant tumor of maxillary sinus" ,
   "malignant tumor of nasal sinuses" ,
-  "neoplasm of accessory sinus" ,
   "malignant tumor of larynx" ,
   "malignant tumor of neck" ,
   "malignant tumor of head and neck" ,
-  "neoplasm of head and neck" ,
-  "malignant tumor of thyroid gland" ,
- "neoplasm of thyroid gland"
+  "malignant tumor of thyroid gland" 
   
 
                             ) ,
-domains="Condition",
-search_synonyms = TRUE,
-fuzzy_match = FALSE,
-exclude = c("risk",
-            "fear",
-            "benign", 
-            "screening",
-            "suspected",
-            "secondary",
-            "in situ"),
-include_descendants = TRUE,
-include_ancestor = FALSE,
-db=db,
-vocabulary_database_schema =  vocabulary_database_schema)
+  domains="Condition",
+  searchSynonyms = TRUE,
+  fuzzyMatch = FALSE,
+  exclude = c("risk",
+              "fear",
+              "benign", 
+              "screening",
+              "suspected",
+              "secondary",
+              "in situ"),
+  includeDescendants = TRUE,
+  includeAncestor = FALSE,
+  db=db,
+  vocabularyDatabaseSchema =  vocabulary_database_schema)
 
 toc()
 
