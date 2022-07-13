@@ -91,8 +91,6 @@ toc()
 
 write.csv(liver_codes1, "C:/Users/dnewby/OneDrive - Nexus365/Documents/GitHub/CodelistGenerator_cancers/Codelists/liver_cancer_110722.csv")
 
-
-
 #check candidate codes
 readMappings<-showMappings(candidateCodelist=liver_codes1,
                           sourceVocabularies="Read",
