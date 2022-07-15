@@ -1,125 +1,125 @@
-Id,Code,Name,Class,Standard Concept Caption,RC,DRC,Domain,Vocabulary,Ancestors
-46272955,711414003,Primary clear cell adenocarcinoma of lung,Clinical Finding,Standard,0,0,Condition,SNOMED,"$parents[1].showAncestorsModal(d.CONCEPT_ID), tooltip: 'Malignant tumor of lung'"">1"
-45772939,707465007,Primary mucoepidermoid carcinoma of lung,Clinical Finding,Standard,0,0,Condition,SNOMED,"$parents[1].showAncestorsModal(d.CONCEPT_ID), tooltip: 'Malignant tumor of lung'"">1"
-45772938,707455001,Primary papillary squamous cell carcinoma of lung,Clinical Finding,Standard,0,0,Condition,SNOMED,"$parents[1].showAncestorsModal(d.CONCEPT_ID), tooltip: 'Malignant tumor of lung'"">1"
-45772933,707407001,Primary signet ring cell carcinoma of lung,Clinical Finding,Standard,0,0,Condition,SNOMED,"$parents[1].showAncestorsModal(d.CONCEPT_ID), tooltip: 'Malignant tumor of lung'"">1"
-45769097,707673006,Pleuropulmonary blastoma type III,Clinical Finding,Standard,0,0,Condition,SNOMED,"$parents[1].showAncestorsModal(d.CONCEPT_ID), tooltip: 'Malignant tumor of lung'"">1"
-45769096,707672001,Pleuropulmonary blastoma type II,Clinical Finding,Standard,0,0,Condition,SNOMED,"$parents[1].showAncestorsModal(d.CONCEPT_ID), tooltip: 'Malignant tumor of lung'"">1"
-45769095,707671008,Pleuropulmonary blastoma type I,Clinical Finding,Standard,0,0,Condition,SNOMED,"$parents[1].showAncestorsModal(d.CONCEPT_ID), tooltip: 'Malignant tumor of lung'"">1"
-45769094,707670009,Pleuropulmonary blastoma,Clinical Finding,Standard,0,0,Condition,SNOMED,"$parents[1].showAncestorsModal(d.CONCEPT_ID), tooltip: 'Malignant tumor of lung'"">1"
-45769035,707596000,Primary carcinosarcoma of lung,Clinical Finding,Standard,0,0,Condition,SNOMED,"$parents[1].showAncestorsModal(d.CONCEPT_ID), tooltip: 'Malignant tumor of lung'"">1"
-45769034,707595001,Primary mucinous cystadenocarcinoma of lung,Clinical Finding,Standard,0,0,Condition,SNOMED,"$parents[1].showAncestorsModal(d.CONCEPT_ID), tooltip: 'Malignant tumor of lung'"">1"
-45768932,707470000,Primary mucinous bronchiolo-alveolar carcinoma of lung,Clinical Finding,Standard,0,0,Condition,SNOMED,"$parents[1].showAncestorsModal(d.CONCEPT_ID), tooltip: 'Malignant tumor of lung'"">1"
-45768931,707469001,Primary non-mucinous bronchiolo-alveolar carcinoma of lung,Clinical Finding,Standard,0,0,Condition,SNOMED,"$parents[1].showAncestorsModal(d.CONCEPT_ID), tooltip: 'Malignant tumor of lung'"">1"
-45768930,707468009,Primary mixed mucinous and non-mucinous bronchiolo-alveolar carcinoma of lung,Clinical Finding,Standard,0,0,Condition,SNOMED,"$parents[1].showAncestorsModal(d.CONCEPT_ID), tooltip: 'Malignant tumor of lung'"">1"
-45768929,707467004,Primary salivary gland type carcinoma of lung,Clinical Finding,Standard,0,0,Condition,SNOMED,"$parents[1].showAncestorsModal(d.CONCEPT_ID), tooltip: 'Malignant tumor of lung'"">1"
-45768928,707466008,Primary adenoid cystic carcinoma of lung,Clinical Finding,Standard,0,0,Condition,SNOMED,"$parents[1].showAncestorsModal(d.CONCEPT_ID), tooltip: 'Malignant tumor of lung'"">1"
-45768927,707464006,Primary myoepithelial carcinoma of lung,Clinical Finding,Standard,0,0,Condition,SNOMED,"$parents[1].showAncestorsModal(d.CONCEPT_ID), tooltip: 'Malignant tumor of lung'"">1"
-45768923,707460002,Primary pseudosarcomatous carcinoma of lung,Clinical Finding,Standard,0,0,Condition,SNOMED,"$parents[1].showAncestorsModal(d.CONCEPT_ID), tooltip: 'Malignant tumor of lung'"">1"
-45768922,707458004,Primary pleomorphic carcinoma of lung,Clinical Finding,Standard,0,0,Condition,SNOMED,"$parents[1].showAncestorsModal(d.CONCEPT_ID), tooltip: 'Malignant tumor of lung'"">1"
-45768921,707457009,Primary spindle cell carcinoma of lung,Clinical Finding,Standard,0,0,Condition,SNOMED,"$parents[1].showAncestorsModal(d.CONCEPT_ID), tooltip: 'Malignant tumor of lung'"">1"
-45768920,707456000,Primary undifferentiated carcinoma of lung,Clinical Finding,Standard,0,0,Condition,SNOMED,"$parents[1].showAncestorsModal(d.CONCEPT_ID), tooltip: 'Malignant tumor of lung'"">1"
-45768919,707454002,Primary basaloid squamous cell carcinoma of lung,Clinical Finding,Standard,0,0,Condition,SNOMED,"$parents[1].showAncestorsModal(d.CONCEPT_ID), tooltip: 'Malignant tumor of lung'"">1"
-45768918,707453008,Primary clear cell squamous cell carcinoma of lung,Clinical Finding,Standard,0,0,Condition,SNOMED,"$parents[1].showAncestorsModal(d.CONCEPT_ID), tooltip: 'Malignant tumor of lung'"">1"
-45768917,707452003,Primary mucinous adenocarcinoma of lung,Clinical Finding,Standard,0,0,Condition,SNOMED,"$parents[1].showAncestorsModal(d.CONCEPT_ID), tooltip: 'Malignant tumor of lung'"">1"
-45768916,707451005,Primary adenocarcinoma of lung,Clinical Finding,Standard,0,0,Condition,SNOMED,"$parents[1].showAncestorsModal(d.CONCEPT_ID), tooltip: 'Malignant tumor of lung'"">1"
-45768886,707411007,Primary papillary adenocarcinoma of lung,Clinical Finding,Standard,0,0,Condition,SNOMED,"$parents[1].showAncestorsModal(d.CONCEPT_ID), tooltip: 'Malignant tumor of lung'"">1"
-45768885,707410008,Primary solid carcinoma of lung,Clinical Finding,Standard,0,0,Condition,SNOMED,"$parents[1].showAncestorsModal(d.CONCEPT_ID), tooltip: 'Malignant tumor of lung'"">1"
-45768884,707409003,Primary acinar cell carcinoma of lung,Clinical Finding,Standard,0,0,Condition,SNOMED,"$parents[1].showAncestorsModal(d.CONCEPT_ID), tooltip: 'Malignant tumor of lung'"">1"
-45768883,707408006,Primary small cell non-keratinizing squamous cell carcinoma of lung,Clinical Finding,Standard,0,0,Condition,SNOMED,"$parents[1].showAncestorsModal(d.CONCEPT_ID), tooltip: 'Malignant tumor of lung'"">1"
-45768881,707405009,Primary adenosquamous carcinoma of lung,Clinical Finding,Standard,0,0,Condition,SNOMED,"$parents[1].showAncestorsModal(d.CONCEPT_ID), tooltip: 'Malignant tumor of lung'"">1"
-45768880,707404008,Primary mixed subtype adenocarcinoma of lung,Clinical Finding,Standard,0,0,Condition,SNOMED,"$parents[1].showAncestorsModal(d.CONCEPT_ID), tooltip: 'Malignant tumor of lung'"">1"
-45768879,707403002,Primary fetal adenocarcinoma of lung,Clinical Finding,Standard,0,0,Condition,SNOMED,"$parents[1].showAncestorsModal(d.CONCEPT_ID), tooltip: 'Malignant tumor of lung'"">1"
-45766131,703230006,Non-small cell lung cancer without mutation in epidermal growth factor receptor,Clinical Finding,Standard,0,0,Condition,SNOMED,"$parents[1].showAncestorsModal(d.CONCEPT_ID), tooltip: 'Malignant tumor of lung'"">1"
-45766129,703228009,Non-small cell lung cancer with mutation in epidermal growth factor receptor,Clinical Finding,Standard,0,0,Condition,SNOMED,"$parents[1].showAncestorsModal(d.CONCEPT_ID), tooltip: 'Malignant tumor of lung'"">1"
-42539251,15956341000119100,Adenocarcinoma of left lung,Clinical Finding,Standard,0,0,Condition,SNOMED,"$parents[1].showAncestorsModal(d.CONCEPT_ID), tooltip: 'Malignant tumor of lung'"">1"
-40492938,448993007,Carcinoma of lung,Clinical Finding,Standard,0,0,Condition,SNOMED,"$parents[1].showAncestorsModal(d.CONCEPT_ID), tooltip: 'Malignant tumor of lung'"">1"
-40492020,448867004,Diffuse non-Hodgkin's lymphoma of lung,Clinical Finding,Standard,0,0,Condition,SNOMED,"$parents[1].showAncestorsModal(d.CONCEPT_ID), tooltip: 'Malignant tumor of lung'"">1"
-40490998,448672006,Follicular non-Hodgkin's lymphoma of lung,Clinical Finding,Standard,0,0,Condition,SNOMED,"$parents[1].showAncestorsModal(d.CONCEPT_ID), tooltip: 'Malignant tumor of lung'"">1"
-40489468,448372003,Non-Hodgkin's lymphoma of lung,Clinical Finding,Standard,0,0,Condition,SNOMED,"$parents[1].showAncestorsModal(d.CONCEPT_ID), tooltip: 'Malignant tumor of lung'"">1"
-40391740,189815007,Pulmonary blastoma,Clinical Finding,Standard,0,0,Condition,SNOMED,"$parents[1].showAncestorsModal(d.CONCEPT_ID), tooltip: 'Malignant tumor of lung'"">1"
-37395651,67841000119103,"Primary small cell malignant neoplasm of lung, TNM stage 4",Clinical Finding,Standard,0,0,Condition,SNOMED,"$parents[1].showAncestorsModal(d.CONCEPT_ID), tooltip: 'Malignant tumor of lung'"">1"
-37395650,67831000119107,"Primary small cell malignant neoplasm of lung, TNM stage 3",Clinical Finding,Standard,0,0,Condition,SNOMED,"$parents[1].showAncestorsModal(d.CONCEPT_ID), tooltip: 'Malignant tumor of lung'"">1"
-37395649,67821000119109,"Primary small cell malignant neoplasm of lung, TNM stage 2",Clinical Finding,Standard,0,0,Condition,SNOMED,"$parents[1].showAncestorsModal(d.CONCEPT_ID), tooltip: 'Malignant tumor of lung'"">1"
-37395648,67811000119102,"Primary small cell malignant neoplasm of lung, TNM stage 1",Clinical Finding,Standard,0,0,Condition,SNOMED,"$parents[1].showAncestorsModal(d.CONCEPT_ID), tooltip: 'Malignant tumor of lung'"">1"
-37311684,822969007,Acinar cell cystadenocarcinoma of lung,Clinical Finding,Standard,0,0,Condition,SNOMED,"$parents[1].showAncestorsModal(d.CONCEPT_ID), tooltip: 'Malignant tumor of lung'"">1"
-37110034,724060008,Malignant neoplasm of right upper lobe of lung,Clinical Finding,Standard,0,0,Condition,SNOMED,"$parents[1].showAncestorsModal(d.CONCEPT_ID), tooltip: 'Malignant tumor of lung'"">1"
-37110033,724059003,Malignant neoplasm of lower lobe of left lung,Clinical Finding,Standard,0,0,Condition,SNOMED,"$parents[1].showAncestorsModal(d.CONCEPT_ID), tooltip: 'Malignant tumor of lung'"">1"
-37110032,724058006,Malignant neoplasm of upper lobe of left lung,Clinical Finding,Standard,0,0,Condition,SNOMED,"$parents[1].showAncestorsModal(d.CONCEPT_ID), tooltip: 'Malignant tumor of lung'"">1"
-37110031,724056005,Malignant neoplasm of lower lobe of right lung,Clinical Finding,Standard,0,0,Condition,SNOMED,"$parents[1].showAncestorsModal(d.CONCEPT_ID), tooltip: 'Malignant tumor of lung'"">1"
-37109576,723301009,Squamous non-small cell lung cancer,Clinical Finding,Standard,0,0,Condition,SNOMED,"$parents[1].showAncestorsModal(d.CONCEPT_ID), tooltip: 'Malignant tumor of lung'"">1"
-36717017,1078961000119100,Primary adenocarcinoma of upper lobe of right lung,Clinical Finding,Standard,0,0,Condition,SNOMED,"$parents[1].showAncestorsModal(d.CONCEPT_ID), tooltip: 'Malignant tumor of lung'"">1"
-36716500,722528008,Primary malignant neuroendocrine neoplasm of lung,Clinical Finding,Standard,0,0,Condition,SNOMED,
-36716426,722425009,Reactive oxygen species 1 positive non-small cell lung cancer,Clinical Finding,Standard,0,0,Condition,SNOMED,
-36713366,683991000119103,Extensive stage primary small cell carcinoma of lung,Clinical Finding,Standard,0,0,Condition,SNOMED,
-36712981,15956381000119100,Adenocarcinoma of right lung,Clinical Finding,Standard,0,0,Condition,SNOMED,
-36712816,12240991000119100,Squamous cell carcinoma of right lung,Clinical Finding,Standard,0,0,Condition,SNOMED,
-36712815,12240951000119100,Squamous cell carcinoma of left lung,Clinical Finding,Standard,0,0,Condition,SNOMED,
-36712709,1078931000119100,Primary adenocarcinoma of lower lobe of right lung,Clinical Finding,Standard,0,0,Condition,SNOMED,
-36712708,1078901000119100,Primary adenocarcinoma of upper lobe of left lung,Clinical Finding,Standard,0,0,Condition,SNOMED,
-36712707,1078881000119100,Primary adenocarcinoma of lower lobe of left lung,Clinical Finding,Standard,0,0,Condition,SNOMED,
-36686538,12235601000119100,Large cell carcinoma of right lung,Clinical Finding,Standard,0,0,Condition,SNOMED,
-36686537,12235561000119100,Large cell carcinoma of left lung,Clinical Finding,Standard,0,0,Condition,SNOMED,
-4322387,425230006,"Squamous cell carcinoma of lung, TNM stage 3",Clinical Finding,Standard,0,0,Condition,SNOMED,
-4314172,425048006,"Non-small cell carcinoma of lung, TNM stage 2",Clinical Finding,Standard,0,0,Condition,SNOMED,
-4314040,424938000,"Large cell carcinoma of lung, TNM stage 1",Clinical Finding,Standard,0,0,Condition,SNOMED,
-4313751,423600008,"Large cell carcinoma of lung, TNM stage 4",Clinical Finding,Standard,0,0,Condition,SNOMED,
-4313200,423468007,"Squamous cell carcinoma of lung, TNM stage 2",Clinical Finding,Standard,0,0,Condition,SNOMED,
-4312768,424970000,"Large cell carcinoma of lung, TNM stage 3",Clinical Finding,Standard,0,0,Condition,SNOMED,
-4312567,93993007,Primary malignant neoplasm of upper lobe of right lung,Clinical Finding,Standard,0,0,Condition,SNOMED,
-4312274,425376008,"Squamous cell carcinoma of lung, TNM stage 4",Clinical Finding,Standard,0,0,Condition,SNOMED,
-4311997,422968005,"Non-small cell carcinoma of lung, TNM stage 3",Clinical Finding,Standard,0,0,Condition,SNOMED,
-4311501,93992002,Primary malignant neoplasm of right middle lobe of lung,Clinical Finding,Standard,0,0,Condition,SNOMED,
-4310703,424132000,"Non-small cell carcinoma of lung, TNM stage 1",Clinical Finding,Standard,0,0,Condition,SNOMED,
-4310448,423295000,"Squamous cell carcinoma of lung, TNM stage 1",Clinical Finding,Standard,0,0,Condition,SNOMED,
-4308479,423121009,"Non-small cell carcinoma of lung, TNM stage 4",Clinical Finding,Standard,0,0,Condition,SNOMED,
-4307118,423050000,"Large cell carcinoma of lung, TNM stage 2",Clinical Finding,Standard,0,0,Condition,SNOMED,
-4247832,93864006,Primary malignant neoplasm of lower lobe of left lung,Clinical Finding,Standard,0,0,Condition,SNOMED,
-4247727,93731002,Primary malignant neoplasm of bronchus of right lower lobe,Clinical Finding,Standard,0,0,Condition,SNOMED,
-4246805,93733004,Primary malignant neoplasm of bronchus of right upper lobe,Clinical Finding,Standard,0,0,Condition,SNOMED,
-4246804,93732009,Primary malignant neoplasm of bronchus of right middle lobe,Clinical Finding,Standard,0,0,Condition,SNOMED,
-4246148,93991009,Primary malignant neoplasm of right lower lobe of lung,Clinical Finding,Standard,0,0,Condition,SNOMED,
-4246126,93865007,Primary malignant neoplasm of left upper lobe of lung,Clinical Finding,Standard,0,0,Condition,SNOMED,
-4246121,93827000,Primary malignant neoplasm of hilus of lung,Clinical Finding,Standard,0,0,Condition,SNOMED,
-4246027,93730001,Primary malignant neoplasm of bronchus of left upper lobe,Clinical Finding,Standard,0,0,Condition,SNOMED,
-4208307,440173001,Nonsquamous nonsmall cell neoplasm of lung,Clinical Finding,Standard,0,0,Condition,SNOMED,
-4198434,314954002,Local recurrence of malignant tumor of lung,Clinical Finding,Standard,0,0,Condition,SNOMED,
-4197583,313357008,Squamous cell carcinoma of bronchus in right upper lobe,Clinical Finding,Standard,0,0,Condition,SNOMED,
-4197582,313356004,Squamous cell carcinoma of bronchus in right middle lobe,Clinical Finding,Standard,0,0,Condition,SNOMED,
-4197581,313354001,Squamous cell carcinoma of bronchus in left upper lobe,Clinical Finding,Standard,0,0,Condition,SNOMED,
-4196725,313355000,Squamous cell carcinoma of bronchus in right lower lobe,Clinical Finding,Standard,0,0,Condition,SNOMED,
-4196724,313353007,Squamous cell carcinoma of bronchus in left lower lobe,Clinical Finding,Standard,0,0,Condition,SNOMED,
-4162252,372136001,"Carcinoma of upper lobe, bronchus or lung",Clinical Finding,Standard,0,0,Condition,SNOMED,
-4162248,372113005,"Carcinoma of middle lobe, bronchus or lung",Clinical Finding,Standard,0,0,Condition,SNOMED,
-4157454,372110008,"Primary malignant neoplasm of lower lobe, bronchus or lung",Clinical Finding,Standard,0,0,Condition,SNOMED,
-4155293,372111007,"Carcinoma of lower lobe, bronchus or lung",Clinical Finding,Standard,0,0,Condition,SNOMED,
-4151250,269464000,"Malignant neoplasm of upper lobe, bronchus or lung",Clinical Finding,Standard,0,0,Condition,SNOMED,
-4143825,426964009,Epidermal growth factor receptor positive non-small cell lung cancer,Clinical Finding,Standard,0,0,Condition,SNOMED,
-4140471,427038005,Epidermal growth factor receptor negative non-small cell lung cancer,Clinical Finding,Standard,0,0,Condition,SNOMED,
-4115276,254637007,Non-small cell lung cancer,Clinical Finding,Standard,0,0,Condition,SNOMED,
-4112739,254633006,Oat cell carcinoma of lung,Clinical Finding,Standard,0,0,Condition,SNOMED,
-4112738,254626006,Adenocarcinoma of lung,Clinical Finding,Standard,0,0,Condition,SNOMED,
-4111807,254635004,Epithelioid hemangioendothelioma of lung,Clinical Finding,Standard,0,0,Condition,SNOMED,
-4110706,254638002,Pancoast tumor,Clinical Finding,Standard,0,0,Condition,SNOMED,
-4110705,254634000,Squamous cell carcinoma of lung,Clinical Finding,Standard,0,0,Condition,SNOMED,
-4110591,254632001,Small cell carcinoma of lung,Clinical Finding,Standard,0,0,Condition,SNOMED,
-4110590,254631008,Giant cell carcinoma of lung,Clinical Finding,Standard,0,0,Condition,SNOMED,
-4110589,254629004,Large cell carcinoma of lung,Clinical Finding,Standard,0,0,Condition,SNOMED,
-4110587,254625005,Malignant tumor of lung parenchyma,Clinical Finding,Standard,0,0,Condition,SNOMED,
-4092218,187865009,Malignant neoplasm of middle lobe bronchus,Clinical Finding,Standard,0,0,Condition,SNOMED,
-4092217,187864008,"Malignant neoplasm of middle lobe, bronchus or lung",Clinical Finding,Standard,54,54,Condition,SNOMED,
-4092216,187862007,Malignant neoplasm of upper lobe of lung,Clinical Finding,Standard,0,0,Condition,SNOMED,
-4089756,187870002,Malignant neoplasm of lower lobe of lung,Clinical Finding,Standard,0,0,Condition,SNOMED,
-4089754,187866005,Malignant neoplasm of middle lobe of lung,Clinical Finding,Standard,0,0,Condition,SNOMED,
-3654352,830151004,Anaplastic lymphoma kinase fusion oncogene positive non-small cell lung cancer,Clinical Finding,Standard,0,0,Condition,SNOMED,
-3654301,830060005,Reactive oxygen species 1 negative non-small cell lung cancer,Clinical Finding,Standard,0,0,Condition,SNOMED,
-3654297,830055006,Anaplastic lymphoma kinase fusion oncogene negative non-small cell lung cancer,Clinical Finding,Standard,0,0,Condition,SNOMED,
-765056,123661000119106,Malignant carcinoid tumor of lung,Clinical Finding,Standard,0,0,Condition,SNOMED,
-762427,354741000119109,Primary malignant neoplasm of right lung,Clinical Finding,Standard,0,0,Condition,SNOMED,
-762426,354701000119107,Primary malignant neoplasm of left lung,Clinical Finding,Standard,0,0,Condition,SNOMED,
-443388,363358000,Malignant tumor of lung,Clinical Finding,Standard,0,196,Condition,SNOMED,
-433973,93729006,Primary malignant neoplasm of bronchus of left lower lobe,Clinical Finding,Standard,0,0,Condition,SNOMED,
-261236,372135002,"Primary malignant neoplasm of upper lobe, bronchus or lung",Clinical Finding,Standard,0,0,Condition,SNOMED,
-258375,109371002,Overlapping malignant neoplasm of bronchus and lung,Clinical Finding,Standard,95,95,Condition,SNOMED,
-258369,93880001,Primary malignant neoplasm of lung,Clinical Finding,Standard,0,95,Condition,SNOMED,
-256646,372112000,"Primary malignant neoplasm of middle lobe, bronchus or lung",Clinical Finding,Standard,0,0,Condition,SNOMED,
+Id,Code,Name,Class,Standard Concept Caption,RC,DRC,Domain,Vocabulary,Ancestors,Include DN,Comment DN
+46272955,711414003,Primary clear cell adenocarcinoma of lung,Clinical Finding,Standard,0,0,Condition,SNOMED,"$parents[1].showAncestorsModal(d.CONCEPT_ID), tooltip: 'Malignant tumor of lung'"">1",,
+45772939,707465007,Primary mucoepidermoid carcinoma of lung,Clinical Finding,Standard,0,0,Condition,SNOMED,"$parents[1].showAncestorsModal(d.CONCEPT_ID), tooltip: 'Malignant tumor of lung'"">1",,
+45772938,707455001,Primary papillary squamous cell carcinoma of lung,Clinical Finding,Standard,0,0,Condition,SNOMED,"$parents[1].showAncestorsModal(d.CONCEPT_ID), tooltip: 'Malignant tumor of lung'"">1",,
+45772933,707407001,Primary signet ring cell carcinoma of lung,Clinical Finding,Standard,0,0,Condition,SNOMED,"$parents[1].showAncestorsModal(d.CONCEPT_ID), tooltip: 'Malignant tumor of lung'"">1",,
+45769097,707673006,Pleuropulmonary blastoma type III,Clinical Finding,Standard,0,0,Condition,SNOMED,"$parents[1].showAncestorsModal(d.CONCEPT_ID), tooltip: 'Malignant tumor of lung'"">1",,
+45769096,707672001,Pleuropulmonary blastoma type II,Clinical Finding,Standard,0,0,Condition,SNOMED,"$parents[1].showAncestorsModal(d.CONCEPT_ID), tooltip: 'Malignant tumor of lung'"">1",,
+45769095,707671008,Pleuropulmonary blastoma type I,Clinical Finding,Standard,0,0,Condition,SNOMED,"$parents[1].showAncestorsModal(d.CONCEPT_ID), tooltip: 'Malignant tumor of lung'"">1",,
+45769094,707670009,Pleuropulmonary blastoma,Clinical Finding,Standard,0,0,Condition,SNOMED,"$parents[1].showAncestorsModal(d.CONCEPT_ID), tooltip: 'Malignant tumor of lung'"">1",,
+45769035,707596000,Primary carcinosarcoma of lung,Clinical Finding,Standard,0,0,Condition,SNOMED,"$parents[1].showAncestorsModal(d.CONCEPT_ID), tooltip: 'Malignant tumor of lung'"">1",,
+45769034,707595001,Primary mucinous cystadenocarcinoma of lung,Clinical Finding,Standard,0,0,Condition,SNOMED,"$parents[1].showAncestorsModal(d.CONCEPT_ID), tooltip: 'Malignant tumor of lung'"">1",,
+45768932,707470000,Primary mucinous bronchiolo-alveolar carcinoma of lung,Clinical Finding,Standard,0,0,Condition,SNOMED,"$parents[1].showAncestorsModal(d.CONCEPT_ID), tooltip: 'Malignant tumor of lung'"">1",,
+45768931,707469001,Primary non-mucinous bronchiolo-alveolar carcinoma of lung,Clinical Finding,Standard,0,0,Condition,SNOMED,"$parents[1].showAncestorsModal(d.CONCEPT_ID), tooltip: 'Malignant tumor of lung'"">1",,
+45768930,707468009,Primary mixed mucinous and non-mucinous bronchiolo-alveolar carcinoma of lung,Clinical Finding,Standard,0,0,Condition,SNOMED,"$parents[1].showAncestorsModal(d.CONCEPT_ID), tooltip: 'Malignant tumor of lung'"">1",,
+45768929,707467004,Primary salivary gland type carcinoma of lung,Clinical Finding,Standard,0,0,Condition,SNOMED,"$parents[1].showAncestorsModal(d.CONCEPT_ID), tooltip: 'Malignant tumor of lung'"">1",,
+45768928,707466008,Primary adenoid cystic carcinoma of lung,Clinical Finding,Standard,0,0,Condition,SNOMED,"$parents[1].showAncestorsModal(d.CONCEPT_ID), tooltip: 'Malignant tumor of lung'"">1",,
+45768927,707464006,Primary myoepithelial carcinoma of lung,Clinical Finding,Standard,0,0,Condition,SNOMED,"$parents[1].showAncestorsModal(d.CONCEPT_ID), tooltip: 'Malignant tumor of lung'"">1",,
+45768923,707460002,Primary pseudosarcomatous carcinoma of lung,Clinical Finding,Standard,0,0,Condition,SNOMED,"$parents[1].showAncestorsModal(d.CONCEPT_ID), tooltip: 'Malignant tumor of lung'"">1",,
+45768922,707458004,Primary pleomorphic carcinoma of lung,Clinical Finding,Standard,0,0,Condition,SNOMED,"$parents[1].showAncestorsModal(d.CONCEPT_ID), tooltip: 'Malignant tumor of lung'"">1",,
+45768921,707457009,Primary spindle cell carcinoma of lung,Clinical Finding,Standard,0,0,Condition,SNOMED,"$parents[1].showAncestorsModal(d.CONCEPT_ID), tooltip: 'Malignant tumor of lung'"">1",,
+45768920,707456000,Primary undifferentiated carcinoma of lung,Clinical Finding,Standard,0,0,Condition,SNOMED,"$parents[1].showAncestorsModal(d.CONCEPT_ID), tooltip: 'Malignant tumor of lung'"">1",,
+45768919,707454002,Primary basaloid squamous cell carcinoma of lung,Clinical Finding,Standard,0,0,Condition,SNOMED,"$parents[1].showAncestorsModal(d.CONCEPT_ID), tooltip: 'Malignant tumor of lung'"">1",,
+45768918,707453008,Primary clear cell squamous cell carcinoma of lung,Clinical Finding,Standard,0,0,Condition,SNOMED,"$parents[1].showAncestorsModal(d.CONCEPT_ID), tooltip: 'Malignant tumor of lung'"">1",,
+45768917,707452003,Primary mucinous adenocarcinoma of lung,Clinical Finding,Standard,0,0,Condition,SNOMED,"$parents[1].showAncestorsModal(d.CONCEPT_ID), tooltip: 'Malignant tumor of lung'"">1",,
+45768916,707451005,Primary adenocarcinoma of lung,Clinical Finding,Standard,0,0,Condition,SNOMED,"$parents[1].showAncestorsModal(d.CONCEPT_ID), tooltip: 'Malignant tumor of lung'"">1",,
+45768886,707411007,Primary papillary adenocarcinoma of lung,Clinical Finding,Standard,0,0,Condition,SNOMED,"$parents[1].showAncestorsModal(d.CONCEPT_ID), tooltip: 'Malignant tumor of lung'"">1",,
+45768885,707410008,Primary solid carcinoma of lung,Clinical Finding,Standard,0,0,Condition,SNOMED,"$parents[1].showAncestorsModal(d.CONCEPT_ID), tooltip: 'Malignant tumor of lung'"">1",,
+45768884,707409003,Primary acinar cell carcinoma of lung,Clinical Finding,Standard,0,0,Condition,SNOMED,"$parents[1].showAncestorsModal(d.CONCEPT_ID), tooltip: 'Malignant tumor of lung'"">1",,
+45768883,707408006,Primary small cell non-keratinizing squamous cell carcinoma of lung,Clinical Finding,Standard,0,0,Condition,SNOMED,"$parents[1].showAncestorsModal(d.CONCEPT_ID), tooltip: 'Malignant tumor of lung'"">1",,
+45768881,707405009,Primary adenosquamous carcinoma of lung,Clinical Finding,Standard,0,0,Condition,SNOMED,"$parents[1].showAncestorsModal(d.CONCEPT_ID), tooltip: 'Malignant tumor of lung'"">1",,
+45768880,707404008,Primary mixed subtype adenocarcinoma of lung,Clinical Finding,Standard,0,0,Condition,SNOMED,"$parents[1].showAncestorsModal(d.CONCEPT_ID), tooltip: 'Malignant tumor of lung'"">1",,
+45768879,707403002,Primary fetal adenocarcinoma of lung,Clinical Finding,Standard,0,0,Condition,SNOMED,"$parents[1].showAncestorsModal(d.CONCEPT_ID), tooltip: 'Malignant tumor of lung'"">1",,
+45766131,703230006,Non-small cell lung cancer without mutation in epidermal growth factor receptor,Clinical Finding,Standard,0,0,Condition,SNOMED,"$parents[1].showAncestorsModal(d.CONCEPT_ID), tooltip: 'Malignant tumor of lung'"">1",,
+45766129,703228009,Non-small cell lung cancer with mutation in epidermal growth factor receptor,Clinical Finding,Standard,0,0,Condition,SNOMED,"$parents[1].showAncestorsModal(d.CONCEPT_ID), tooltip: 'Malignant tumor of lung'"">1",,
+42539251,1.60E+16,Adenocarcinoma of left lung,Clinical Finding,Standard,0,0,Condition,SNOMED,"$parents[1].showAncestorsModal(d.CONCEPT_ID), tooltip: 'Malignant tumor of lung'"">1",,
+40492938,448993007,Carcinoma of lung,Clinical Finding,Standard,0,0,Condition,SNOMED,"$parents[1].showAncestorsModal(d.CONCEPT_ID), tooltip: 'Malignant tumor of lung'"">1",,
+40492020,448867004,Diffuse non-Hodgkin's lymphoma of lung,Clinical Finding,Standard,0,0,Condition,SNOMED,"$parents[1].showAncestorsModal(d.CONCEPT_ID), tooltip: 'Malignant tumor of lung'"">1",,
+40490998,448672006,Follicular non-Hodgkin's lymphoma of lung,Clinical Finding,Standard,0,0,Condition,SNOMED,"$parents[1].showAncestorsModal(d.CONCEPT_ID), tooltip: 'Malignant tumor of lung'"">1",,
+40489468,448372003,Non-Hodgkin's lymphoma of lung,Clinical Finding,Standard,0,0,Condition,SNOMED,"$parents[1].showAncestorsModal(d.CONCEPT_ID), tooltip: 'Malignant tumor of lung'"">1",,
+40391740,189815007,Pulmonary blastoma,Clinical Finding,Standard,0,0,Condition,SNOMED,"$parents[1].showAncestorsModal(d.CONCEPT_ID), tooltip: 'Malignant tumor of lung'"">1",,
+37395651,6.78E+13,"Primary small cell malignant neoplasm of lung, TNM stage 4",Clinical Finding,Standard,0,0,Condition,SNOMED,"$parents[1].showAncestorsModal(d.CONCEPT_ID), tooltip: 'Malignant tumor of lung'"">1",,
+37395650,6.78E+13,"Primary small cell malignant neoplasm of lung, TNM stage 3",Clinical Finding,Standard,0,0,Condition,SNOMED,"$parents[1].showAncestorsModal(d.CONCEPT_ID), tooltip: 'Malignant tumor of lung'"">1",,
+37395649,6.78E+13,"Primary small cell malignant neoplasm of lung, TNM stage 2",Clinical Finding,Standard,0,0,Condition,SNOMED,"$parents[1].showAncestorsModal(d.CONCEPT_ID), tooltip: 'Malignant tumor of lung'"">1",,
+37395648,6.78E+13,"Primary small cell malignant neoplasm of lung, TNM stage 1",Clinical Finding,Standard,0,0,Condition,SNOMED,"$parents[1].showAncestorsModal(d.CONCEPT_ID), tooltip: 'Malignant tumor of lung'"">1",,
+37311684,822969007,Acinar cell cystadenocarcinoma of lung,Clinical Finding,Standard,0,0,Condition,SNOMED,"$parents[1].showAncestorsModal(d.CONCEPT_ID), tooltip: 'Malignant tumor of lung'"">1",,
+37110034,724060008,Malignant neoplasm of right upper lobe of lung,Clinical Finding,Standard,0,0,Condition,SNOMED,"$parents[1].showAncestorsModal(d.CONCEPT_ID), tooltip: 'Malignant tumor of lung'"">1",,
+37110033,724059003,Malignant neoplasm of lower lobe of left lung,Clinical Finding,Standard,0,0,Condition,SNOMED,"$parents[1].showAncestorsModal(d.CONCEPT_ID), tooltip: 'Malignant tumor of lung'"">1",,
+37110032,724058006,Malignant neoplasm of upper lobe of left lung,Clinical Finding,Standard,0,0,Condition,SNOMED,"$parents[1].showAncestorsModal(d.CONCEPT_ID), tooltip: 'Malignant tumor of lung'"">1",,
+37110031,724056005,Malignant neoplasm of lower lobe of right lung,Clinical Finding,Standard,0,0,Condition,SNOMED,"$parents[1].showAncestorsModal(d.CONCEPT_ID), tooltip: 'Malignant tumor of lung'"">1",,
+37109576,723301009,Squamous non-small cell lung cancer,Clinical Finding,Standard,0,0,Condition,SNOMED,"$parents[1].showAncestorsModal(d.CONCEPT_ID), tooltip: 'Malignant tumor of lung'"">1",,
+36717017,1.08E+15,Primary adenocarcinoma of upper lobe of right lung,Clinical Finding,Standard,0,0,Condition,SNOMED,"$parents[1].showAncestorsModal(d.CONCEPT_ID), tooltip: 'Malignant tumor of lung'"">1",,
+36716500,722528008,Primary malignant neuroendocrine neoplasm of lung,Clinical Finding,Standard,0,0,Condition,SNOMED,,,
+36716426,722425009,Reactive oxygen species 1 positive non-small cell lung cancer,Clinical Finding,Standard,0,0,Condition,SNOMED,,,
+36713366,6.84E+14,Extensive stage primary small cell carcinoma of lung,Clinical Finding,Standard,0,0,Condition,SNOMED,,,
+36712981,1.60E+16,Adenocarcinoma of right lung,Clinical Finding,Standard,0,0,Condition,SNOMED,,,
+36712816,1.22E+16,Squamous cell carcinoma of right lung,Clinical Finding,Standard,0,0,Condition,SNOMED,,,
+36712815,1.22E+16,Squamous cell carcinoma of left lung,Clinical Finding,Standard,0,0,Condition,SNOMED,,,
+36712709,1.08E+15,Primary adenocarcinoma of lower lobe of right lung,Clinical Finding,Standard,0,0,Condition,SNOMED,,,
+36712708,1.08E+15,Primary adenocarcinoma of upper lobe of left lung,Clinical Finding,Standard,0,0,Condition,SNOMED,,,
+36712707,1.08E+15,Primary adenocarcinoma of lower lobe of left lung,Clinical Finding,Standard,0,0,Condition,SNOMED,,,
+36686538,1.22E+16,Large cell carcinoma of right lung,Clinical Finding,Standard,0,0,Condition,SNOMED,,,
+36686537,1.22E+16,Large cell carcinoma of left lung,Clinical Finding,Standard,0,0,Condition,SNOMED,,,
+4322387,425230006,"Squamous cell carcinoma of lung, TNM stage 3",Clinical Finding,Standard,0,0,Condition,SNOMED,,,
+4314172,425048006,"Non-small cell carcinoma of lung, TNM stage 2",Clinical Finding,Standard,0,0,Condition,SNOMED,,,
+4314040,424938000,"Large cell carcinoma of lung, TNM stage 1",Clinical Finding,Standard,0,0,Condition,SNOMED,,,
+4313751,423600008,"Large cell carcinoma of lung, TNM stage 4",Clinical Finding,Standard,0,0,Condition,SNOMED,,,
+4313200,423468007,"Squamous cell carcinoma of lung, TNM stage 2",Clinical Finding,Standard,0,0,Condition,SNOMED,,,
+4312768,424970000,"Large cell carcinoma of lung, TNM stage 3",Clinical Finding,Standard,0,0,Condition,SNOMED,,,
+4312567,93993007,Primary malignant neoplasm of upper lobe of right lung,Clinical Finding,Standard,0,0,Condition,SNOMED,,,
+4312274,425376008,"Squamous cell carcinoma of lung, TNM stage 4",Clinical Finding,Standard,0,0,Condition,SNOMED,,,
+4311997,422968005,"Non-small cell carcinoma of lung, TNM stage 3",Clinical Finding,Standard,0,0,Condition,SNOMED,,,
+4311501,93992002,Primary malignant neoplasm of right middle lobe of lung,Clinical Finding,Standard,0,0,Condition,SNOMED,,,
+4310703,424132000,"Non-small cell carcinoma of lung, TNM stage 1",Clinical Finding,Standard,0,0,Condition,SNOMED,,,
+4310448,423295000,"Squamous cell carcinoma of lung, TNM stage 1",Clinical Finding,Standard,0,0,Condition,SNOMED,,,
+4308479,423121009,"Non-small cell carcinoma of lung, TNM stage 4",Clinical Finding,Standard,0,0,Condition,SNOMED,,,
+4307118,423050000,"Large cell carcinoma of lung, TNM stage 2",Clinical Finding,Standard,0,0,Condition,SNOMED,,,
+4247832,93864006,Primary malignant neoplasm of lower lobe of left lung,Clinical Finding,Standard,0,0,Condition,SNOMED,,,
+4247727,93731002,Primary malignant neoplasm of bronchus of right lower lobe,Clinical Finding,Standard,0,0,Condition,SNOMED,,,
+4246805,93733004,Primary malignant neoplasm of bronchus of right upper lobe,Clinical Finding,Standard,0,0,Condition,SNOMED,,,
+4246804,93732009,Primary malignant neoplasm of bronchus of right middle lobe,Clinical Finding,Standard,0,0,Condition,SNOMED,,,
+4246148,93991009,Primary malignant neoplasm of right lower lobe of lung,Clinical Finding,Standard,0,0,Condition,SNOMED,,,
+4246126,93865007,Primary malignant neoplasm of left upper lobe of lung,Clinical Finding,Standard,0,0,Condition,SNOMED,,,
+4246121,93827000,Primary malignant neoplasm of hilus of lung,Clinical Finding,Standard,0,0,Condition,SNOMED,,,
+4246027,93730001,Primary malignant neoplasm of bronchus of left upper lobe,Clinical Finding,Standard,0,0,Condition,SNOMED,,,
+4208307,440173001,Nonsquamous nonsmall cell neoplasm of lung,Clinical Finding,Standard,0,0,Condition,SNOMED,,,
+4198434,314954002,Local recurrence of malignant tumor of lung,Clinical Finding,Standard,0,0,Condition,SNOMED,,,
+4197583,313357008,Squamous cell carcinoma of bronchus in right upper lobe,Clinical Finding,Standard,0,0,Condition,SNOMED,,,
+4197582,313356004,Squamous cell carcinoma of bronchus in right middle lobe,Clinical Finding,Standard,0,0,Condition,SNOMED,,,
+4197581,313354001,Squamous cell carcinoma of bronchus in left upper lobe,Clinical Finding,Standard,0,0,Condition,SNOMED,,,
+4196725,313355000,Squamous cell carcinoma of bronchus in right lower lobe,Clinical Finding,Standard,0,0,Condition,SNOMED,,,
+4196724,313353007,Squamous cell carcinoma of bronchus in left lower lobe,Clinical Finding,Standard,0,0,Condition,SNOMED,,,
+4162252,372136001,"Carcinoma of upper lobe, bronchus or lung",Clinical Finding,Standard,0,0,Condition,SNOMED,,,
+4162248,372113005,"Carcinoma of middle lobe, bronchus or lung",Clinical Finding,Standard,0,0,Condition,SNOMED,,,
+4157454,372110008,"Primary malignant neoplasm of lower lobe, bronchus or lung",Clinical Finding,Standard,0,0,Condition,SNOMED,,,
+4155293,372111007,"Carcinoma of lower lobe, bronchus or lung",Clinical Finding,Standard,0,0,Condition,SNOMED,,,
+4151250,269464000,"Malignant neoplasm of upper lobe, bronchus or lung",Clinical Finding,Standard,0,0,Condition,SNOMED,,,
+4143825,426964009,Epidermal growth factor receptor positive non-small cell lung cancer,Clinical Finding,Standard,0,0,Condition,SNOMED,,,
+4140471,427038005,Epidermal growth factor receptor negative non-small cell lung cancer,Clinical Finding,Standard,0,0,Condition,SNOMED,,,
+4115276,254637007,Non-small cell lung cancer,Clinical Finding,Standard,0,0,Condition,SNOMED,,,
+4112739,254633006,Oat cell carcinoma of lung,Clinical Finding,Standard,0,0,Condition,SNOMED,,,
+4112738,254626006,Adenocarcinoma of lung,Clinical Finding,Standard,0,0,Condition,SNOMED,,,
+4111807,254635004,Epithelioid hemangioendothelioma of lung,Clinical Finding,Standard,0,0,Condition,SNOMED,,,
+4110706,254638002,Pancoast tumor,Clinical Finding,Standard,0,0,Condition,SNOMED,,,
+4110705,254634000,Squamous cell carcinoma of lung,Clinical Finding,Standard,0,0,Condition,SNOMED,,,
+4110591,254632001,Small cell carcinoma of lung,Clinical Finding,Standard,0,0,Condition,SNOMED,,,
+4110590,254631008,Giant cell carcinoma of lung,Clinical Finding,Standard,0,0,Condition,SNOMED,,,
+4110589,254629004,Large cell carcinoma of lung,Clinical Finding,Standard,0,0,Condition,SNOMED,,,
+4110587,254625005,Malignant tumor of lung parenchyma,Clinical Finding,Standard,0,0,Condition,SNOMED,,,
+4092218,187865009,Malignant neoplasm of middle lobe bronchus,Clinical Finding,Standard,0,0,Condition,SNOMED,,,
+4092217,187864008,"Malignant neoplasm of middle lobe, bronchus or lung",Clinical Finding,Standard,54,54,Condition,SNOMED,,,
+4092216,187862007,Malignant neoplasm of upper lobe of lung,Clinical Finding,Standard,0,0,Condition,SNOMED,,,
+4089756,187870002,Malignant neoplasm of lower lobe of lung,Clinical Finding,Standard,0,0,Condition,SNOMED,,,
+4089754,187866005,Malignant neoplasm of middle lobe of lung,Clinical Finding,Standard,0,0,Condition,SNOMED,,,
+3654352,830151004,Anaplastic lymphoma kinase fusion oncogene positive non-small cell lung cancer,Clinical Finding,Standard,0,0,Condition,SNOMED,,,
+3654301,830060005,Reactive oxygen species 1 negative non-small cell lung cancer,Clinical Finding,Standard,0,0,Condition,SNOMED,,,
+3654297,830055006,Anaplastic lymphoma kinase fusion oncogene negative non-small cell lung cancer,Clinical Finding,Standard,0,0,Condition,SNOMED,,,
+765056,1.24E+14,Malignant carcinoid tumor of lung,Clinical Finding,Standard,0,0,Condition,SNOMED,,,
+762427,3.55E+14,Primary malignant neoplasm of right lung,Clinical Finding,Standard,0,0,Condition,SNOMED,,,
+762426,3.55E+14,Primary malignant neoplasm of left lung,Clinical Finding,Standard,0,0,Condition,SNOMED,,,
+443388,363358000,Malignant tumor of lung,Clinical Finding,Standard,0,196,Condition,SNOMED,,,
+433973,93729006,Primary malignant neoplasm of bronchus of left lower lobe,Clinical Finding,Standard,0,0,Condition,SNOMED,,,
+261236,372135002,"Primary malignant neoplasm of upper lobe, bronchus or lung",Clinical Finding,Standard,0,0,Condition,SNOMED,,,
+258375,109371002,Overlapping malignant neoplasm of bronchus and lung,Clinical Finding,Standard,95,95,Condition,SNOMED,,,
+258369,93880001,Primary malignant neoplasm of lung,Clinical Finding,Standard,0,95,Condition,SNOMED,,,
+256646,372112000,"Primary malignant neoplasm of middle lobe, bronchus or lung",Clinical Finding,Standard,0,0,Condition,SNOMED,,,
