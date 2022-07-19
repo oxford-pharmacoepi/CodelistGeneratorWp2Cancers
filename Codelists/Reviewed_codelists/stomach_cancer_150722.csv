@@ -2,7 +2,6 @@ concept_id,concept_name,domain_id,concept_class_id,vocabulary_id,Include DN,Comm
 4116239,"Malignant tumor of esophagus, stomach and duodenum",condition,clinical finding,SNOMED,Unsure,Not sure which site is primary?
 4200887,Local recurrence of malignant tumor of stomach,condition,clinical finding,SNOMED,Unsure,Not a new diagnosis so although a proxy to capure population difficult for calculating survival
 4201620,Metastasis from malignant tumor of stomach,condition,clinical finding,SNOMED,Unsure,Not a new diagnosis so although a proxy to capure population difficult for calculating survival
-197803,Overlapping malignant neoplasm of stomach,condition,clinical finding,SNOMED,Unsure,wont know primary site?
 44792336,Siewert type II adenocarcinoma,condition,clinical finding,SNOMED,Unsure,
 44792338,Siewert type I adenocarcinoma,condition,clinical finding,SNOMED,Unsure,
 4208017,Siewert type I adenocarcinoma of esophagogastric junction,condition,clinical finding,SNOMED,Unsure,
@@ -11,9 +10,10 @@ concept_id,concept_name,domain_id,concept_class_id,vocabulary_id,Include DN,Comm
 40493030,Lymphoma of cardioesophageal junction,condition,clinical finding,SNOMED,Unsure,
 36674609,Metastatic HER2 positive gastroesophageal junction cancer,condition,clinical finding,SNOMED,Unsure,
 36717176,Primary adenocarcinoma of esophagogastric junction,condition,clinical finding,SNOMED,Unsure,
-36715856,Primary adenocarcinoma of overlapping lesion of stomach,condition,clinical finding,SNOMED,Unsure,unknown primary?
-36715864,Primary neuroendocrine carcinoma of overlapping lesion of stomach,condition,clinical finding,SNOMED,Unsure,
 36716505,Primary malignant neoplasm of esophagogastric junction,condition,clinical finding,SNOMED,Unsure,
+197803,Overlapping malignant neoplasm of stomach,condition,clinical finding,SNOMED,Yes,
+36715856,Primary adenocarcinoma of overlapping lesion of stomach,condition,clinical finding,SNOMED,Yes,
+36715864,Primary neuroendocrine carcinoma of overlapping lesion of stomach,condition,clinical finding,SNOMED,Yes,
 4095319,Malignant tumor of fundus of stomach,condition,clinical finding,SNOMED,Yes,
 4095320,Malignant tumor of body of stomach,condition,clinical finding,SNOMED,Yes,
 4149837,Malignant tumor of lesser curve of stomach,condition,clinical finding,SNOMED,Yes,
