@@ -138,37 +138,39 @@ write.csv(stomach_codes2, "C:/Users/dnewby/OneDrive - Nexus365/Documents/GitHub/
 # Malignant cancer only
 # No codes for benign/ in situ 
 # No codes for secondary cancer
+# No codes for cancer in brain or eye as not considered head/neck cancer
+# No codes related to thyroid cancer as not considered head/neck cancer
+# No codes related to skin of head/scalp/neck and neck as this is skin cancer
+
 Sys.time()
 tic()
 headneck_codes1<-getCandidateCodes(keywords=c(
-  
-  "malignant neoplasm of lip, oral cavity and pharynx" ,
   "malignant tumor of lip" ,
   "malignant tumor of base of tongue" ,
   "malignant tumor of tongue" ,
   "malignant tumor of gum" ,
   "malignant tumor of floor of mouth" ,
   "malignant tumor of palate" ,
-  "nalignant tumor of buccal mucosa" ,
+  "malignant tumor of buccal mucosa" ,
   "malignant tumor of oral cavity" ,
   "malignant tumor of parotid gland" ,
   "malignant tumor of major salivary gland" ,
   "malignant tumor of tonsil" ,
   "malignant tumor of oropharynx" ,
   "malignant tumor of nasopharynx" ,
-  "malignant tumor of pyriform fossa" ,
+  "malignant tumor of pyriform fossa" ,  
+  "malignant tumor of hypopharynx" ,
   "malignant tumor of postcricoid region" ,
   "malignant tumor of pharynx" ,
-  "malignant tumor of head and neck" ,
+  "malignant tumor of Waldeyer's ring" ,
+  "malignant neoplasm of lip, oral cavity and pharynx" ,
+  "malignant tumor of middle ear" ,
   "malignant tumor of nasal cavity" ,
-  "malignant tumor of maxillary sinus" ,
   "malignant tumor of nasal sinuses" ,
-  "malignant tumor of larynx" ,
-  "malignant tumor of neck" ,
-  "malignant tumor of head and neck" ,
-  "malignant tumor of thyroid gland" 
-  
-
+   "malignant tumor of larynx" 
+  #"malignant tumor of neck" ,
+  #"malignant tumor of head and neck" ,
+  #"malignant tumor of thyroid gland" 
                             ) ,
   domains="Condition",
   searchSynonyms = TRUE,
@@ -179,7 +181,17 @@ headneck_codes1<-getCandidateCodes(keywords=c(
               "screening",
               "suspected",
               "secondary",
-              "in situ"),
+              "in situ" ,
+              "brain",
+              "eye" ,
+              "pregnancy" ,
+              "childbirth",
+              "baby" ,
+              "hypothyroidism",
+              "hypoparathyroidism",
+              "hyperparathyroidism" ,
+              "skin"
+              ),
   includeDescendants = TRUE,
   includeAncestor = FALSE,
   db=db,
@@ -187,6 +199,115 @@ headneck_codes1<-getCandidateCodes(keywords=c(
 
 toc()
 
+#927 before now 512 remove thyroid now 454
+
 write.csv(headneck_codes1, "C:/Users/dnewby/OneDrive - Nexus365/Documents/GitHub/CodelistGenerator_cancers/Codelists/headneck_cancer_110722.csv")
 
+## testing something out
+
+# two concepts
+# 1 primary malignant neoplasm of lip
+# 2 malignant neoplasm of lip
+
+
+Sys.time()
+tic()
+headneck_codes3<-getCandidateCodes(keywords=c(
+  "malignant tumor of lip" 
+) ,
+domains="Condition",
+searchSynonyms = TRUE,
+fuzzyMatch = FALSE,
+exclude = c("risk",
+            "fear",
+            "benign", 
+            "screening",
+            "suspected",
+            "secondary",
+            "in situ" ,
+            "brain",
+            "eye" ,
+            "pregnancy" ,
+            "childbirth",
+            "baby" ,
+            "hypothyroidism",
+            "hypoparathyroidism",
+            "hyperparathyroidism" ,
+            "skin"
+),
+includeDescendants = TRUE,
+includeAncestor = FALSE,
+db=db,
+vocabularyDatabaseSchema =  vocabulary_database_schema)
+
+toc()
+
+
+Sys.time()
+tic()
+headneck_codes3<-getCandidateCodes(keywords=c(
+  "malignant tumor of lip" 
+) ,
+domains="Condition",
+searchSynonyms = TRUE,
+fuzzyMatch = FALSE,
+exclude = c("risk",
+            "fear",
+            "benign", 
+            "screening",
+            "suspected",
+            "secondary",
+            "in situ" ,
+            "brain",
+            "eye" ,
+            "pregnancy" ,
+            "childbirth",
+            "baby" ,
+            "hypothyroidism",
+            "hypoparathyroidism",
+            "hyperparathyroidism" ,
+            "skin"
+),
+includeDescendants = TRUE,
+includeAncestor = FALSE,
+db=db,
+vocabularyDatabaseSchema =  vocabulary_database_schema)
+
+toc()
+
+
+
+
+
+Sys.time()
+tic()
+headneck_codes4<-getCandidateCodes(keywords=c(
+  "Primary malignant neoplasm of lip" 
+) ,
+domains="Condition",
+searchSynonyms = TRUE,
+fuzzyMatch = FALSE,
+exclude = c("risk",
+            "fear",
+            "benign", 
+            "screening",
+            "suspected",
+            "secondary",
+            "in situ" ,
+            "brain",
+            "eye" ,
+            "pregnancy" ,
+            "childbirth",
+            "baby" ,
+            "hypothyroidism",
+            "hypoparathyroidism",
+            "hyperparathyroidism" ,
+            "skin"
+),
+includeDescendants = TRUE,
+includeAncestor = FALSE,
+db=db,
+vocabularyDatabaseSchema =  vocabulary_database_schema)
+
+toc()
 
