@@ -1,16 +1,19 @@
 Id,Code,Name,Class,Standard Concept Caption,RC,DRC,Domain,Vocabulary,Ancestors,Include DN,Comment DN
-37016740,712849003,Prostate cancer metastatic to bone,Clinical Finding,Standard,0,0,Condition,SNOMED,"$parents[1].showAncestorsModal(d.CONCEPT_ID), tooltip: 'Malignant tumor of prostate'"">1",Unsure,Metastatic
-764971,9.6901E+13,Prostate cancer metastatic to eye,Clinical Finding,Standard,0,0,Condition,SNOMED,"$parents[1].showAncestorsModal(d.CONCEPT_ID), tooltip: 'Malignant tumor of prostate'"">1",Unsure,Metastatic
-36716186,722103009,Hormone sensitive prostate cancer,Clinical Finding,Standard,0,0,Condition,SNOMED,"$parents[1].showAncestorsModal(d.CONCEPT_ID), tooltip: 'Malignant tumor of prostate'"">1",Unsure,
-4141960,427492003,Hormone refractory prostate cancer,Clinical Finding,Standard,0,0,Condition,SNOMED,"$parents[1].showAncestorsModal(d.CONCEPT_ID), tooltip: 'Malignant tumor of prostate'"">1",Unsure,
-4082919,278060005,Endometrioid carcinoma of prostate,Clinical Finding,Standard,0,0,Condition,SNOMED,"$parents[1].showAncestorsModal(d.CONCEPT_ID), tooltip: 'Malignant tumor of prostate'"">1",Unsure,
-37395835,715412008,Familial prostate cancer,Clinical Finding,Standard,0,0,Condition,SNOMED,"$parents[1].showAncestorsModal(d.CONCEPT_ID), tooltip: 'Malignant tumor of prostate'"">1",Yes,
-37311683,822970008,Acinar cell cystadenocarcinoma of prostate,Clinical Finding,Standard,0,0,Condition,SNOMED,"$parents[1].showAncestorsModal(d.CONCEPT_ID), tooltip: 'Malignant tumor of prostate'"">1",Yes,
-37311236,823017009,Infiltrating duct carcinoma of prostate,Clinical Finding,Standard,0,0,Condition,SNOMED,"$parents[1].showAncestorsModal(d.CONCEPT_ID), tooltip: 'Malignant tumor of prostate'"">1",Yes,
-36684947,4.59381E+14,Metastatic castration-resistant prostate cancer,Clinical Finding,Standard,0,0,Condition,SNOMED,"$parents[1].showAncestorsModal(d.CONCEPT_ID), tooltip: 'Malignant tumor of prostate'"">1",Yes,
+40488901,448217003,Follicular non-Hodgkin's lymphoma of prostate,Clinical Finding,Standard,0,0,Condition,SNOMED,"$parents[1].showAncestorsModal(d.CONCEPT_ID), tooltip: 'Malignant tumor of prostate'"">1",Unsure,Again NICE want all types of prostate cancer so have reincluded this - needs discussing on if they actually want this
+40488897,448213004,Diffuse non-Hodgkin's lymphoma of prostate,Clinical Finding,Standard,0,0,Condition,SNOMED,"$parents[1].showAncestorsModal(d.CONCEPT_ID), tooltip: 'Malignant tumor of prostate'"">1",Unsure,
+40486666,449318001,Non-Hodgkin's lymphoma of prostate,Clinical Finding,Standard,0,0,Condition,SNOMED,"$parents[1].showAncestorsModal(d.CONCEPT_ID), tooltip: 'Malignant tumor of prostate'"">1",Unsure,
+37395835,715412008,Familial prostate cancer,Clinical Finding,Standard,0,0,Condition,SNOMED,"$parents[1].showAncestorsModal(d.CONCEPT_ID), tooltip: 'Malignant tumor of prostate'"">1",Unsure,
+37311683,822970008,Acinar cell cystadenocarcinoma of prostate,Clinical Finding,Standard,0,0,Condition,SNOMED,"$parents[1].showAncestorsModal(d.CONCEPT_ID), tooltip: 'Malignant tumor of prostate'"">1",Unsure,
+37311236,823017009,Infiltrating duct carcinoma of prostate,Clinical Finding,Standard,0,0,Condition,SNOMED,"$parents[1].showAncestorsModal(d.CONCEPT_ID), tooltip: 'Malignant tumor of prostate'"">1",Unsure,
+37016740,712849003,Prostate cancer metastatic to bone,Clinical Finding,Standard,0,0,Condition,SNOMED,"$parents[1].showAncestorsModal(d.CONCEPT_ID), tooltip: 'Malignant tumor of prostate'"">1",Unsure,
+36684947,4.59E+14,Metastatic castration-resistant prostate cancer,Clinical Finding,Standard,0,0,Condition,SNOMED,"$parents[1].showAncestorsModal(d.CONCEPT_ID), tooltip: 'Malignant tumor of prostate'"">1",Unsure,
+764971,9.69E+13,Prostate cancer metastatic to eye,Clinical Finding,Standard,0,0,Condition,SNOMED,"$parents[1].showAncestorsModal(d.CONCEPT_ID), tooltip: 'Malignant tumor of prostate'"">1",Unsure,
+36716186,722103009,Hormone sensitive prostate cancer,Clinical Finding,Standard,0,0,Condition,SNOMED,"$parents[1].showAncestorsModal(d.CONCEPT_ID), tooltip: 'Malignant tumor of prostate'"">1",Yes,
 4288534,396198006,Small cell carcinoma of prostate,Clinical Finding,Standard,0,0,Condition,SNOMED,"$parents[1].showAncestorsModal(d.CONCEPT_ID), tooltip: 'Malignant tumor of prostate'"">1",Yes,
 4164017,399590005,Squamous cell carcinoma of prostate,Clinical Finding,Standard,0,0,Condition,SNOMED,"$parents[1].showAncestorsModal(d.CONCEPT_ID), tooltip: 'Malignant tumor of prostate'"">1",Yes,
 4163261,399068003,Malignant tumor of prostate,Clinical Finding,Standard,0,0,Condition,SNOMED,"$parents[1].showAncestorsModal(d.CONCEPT_ID), tooltip: ''"">0",Yes,
 4161028,399490008,Adenocarcinoma of prostate,Clinical Finding,Standard,0,0,Condition,SNOMED,"$parents[1].showAncestorsModal(d.CONCEPT_ID), tooltip: 'Malignant tumor of prostate'"">1",Yes,
+4141960,427492003,Hormone refractory prostate cancer,Clinical Finding,Standard,0,0,Condition,SNOMED,"$parents[1].showAncestorsModal(d.CONCEPT_ID), tooltip: 'Malignant tumor of prostate'"">1",Yes,
 4116087,254900004,Carcinoma of prostate,Clinical Finding,Standard,0,0,Condition,SNOMED,"$parents[1].showAncestorsModal(d.CONCEPT_ID), tooltip: 'Malignant tumor of prostate'"">1",Yes,
+4082919,278060005,Endometrioid carcinoma of prostate,Clinical Finding,Standard,0,0,Condition,SNOMED,"$parents[1].showAncestorsModal(d.CONCEPT_ID), tooltip: 'Malignant tumor of prostate'"">1",Yes,
 200962,93974005,Primary malignant neoplasm of prostate,Clinical Finding,Standard,0,0,Condition,SNOMED,"$parents[1].showAncestorsModal(d.CONCEPT_ID), tooltip: 'Malignant tumor of prostate'"">1",Yes,
