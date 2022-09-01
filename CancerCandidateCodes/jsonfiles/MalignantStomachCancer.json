@@ -400,20 +400,6 @@
           {
             "concept": {
               "CONCEPT_CLASS_ID": "Clinical Finding",
-              "CONCEPT_CODE": "444597005",
-              "CONCEPT_ID": 40480206,
-              "CONCEPT_NAME": "Mucosa-associated lymphoid tissue (MALT) lymphoma of stomach",
-              "DOMAIN_ID": "Condition",
-              "INVALID_REASON": "V",
-              "INVALID_REASON_CAPTION": "Valid",
-              "STANDARD_CONCEPT": "S",
-              "STANDARD_CONCEPT_CAPTION": "Standard",
-              "VOCABULARY_ID": "SNOMED"
-            }
-          },
-          {
-            "concept": {
-              "CONCEPT_CLASS_ID": "Clinical Finding",
               "CONCEPT_CODE": "109836006",
               "CONCEPT_ID": 197803,
               "CONCEPT_NAME": "Overlapping malignant neoplasm of stomach",
