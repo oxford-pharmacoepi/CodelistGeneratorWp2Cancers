@@ -1,0 +1,59 @@
+Id,Code,Name,Class,Standard Concept Caption,RC,DRC,Domain,Vocabulary,Ancestors
+42872396,1.701E+12,Primary adenocarcinoma of colon,Clinical Finding,Standard,0,0,Condition,SNOMED,"$parents[1].showAncestorsModal(d.CONCEPT_ID), tooltip: 'Malignant tumor of large intestineMalignant tumor of intestine'"">2"
+42537577,737058005,Microsatellite instability-high colorectal cancer,Clinical Finding,Standard,0,0,Condition,SNOMED,"$parents[1].showAncestorsModal(d.CONCEPT_ID), tooltip: 'Malignant tumor of large intestineMalignant tumor of intestine'"">2"
+40492939,448994001,Carcinoma of upper rectum,Clinical Finding,Standard,0,0,Condition,SNOMED,"$parents[1].showAncestorsModal(d.CONCEPT_ID), tooltip: 'Malignant tumor of large intestineMalignant tumor of intestine'"">2"
+37208245,6.81651E+14,Primary adenocarcinoma of descending colon,Clinical Finding,Standard,0,0,Condition,SNOMED,"$parents[1].showAncestorsModal(d.CONCEPT_ID), tooltip: 'Malignant tumor of large intestineMalignant tumor of intestine'"">2"
+37018659,9.6281E+13,Overlapping malignant neoplasm of colon and rectum,Clinical Finding,Standard,0,0,Condition,SNOMED,"$parents[1].showAncestorsModal(d.CONCEPT_ID), tooltip: 'Malignant tumor of large intestineMalignant tumor of intestine'"">2"
+37016239,1.84881E+14,Primary adenocarcinoma of rectosigmoid junction,Clinical Finding,Standard,0,0,Condition,SNOMED,"$parents[1].showAncestorsModal(d.CONCEPT_ID), tooltip: 'Malignant tumor of large intestineMalignant tumor of intestine'"">2"
+36717495,721699002,Primary adenocarcinoma of descending colon and splenic flexure,Clinical Finding,Standard,0,0,Condition,SNOMED,"$parents[1].showAncestorsModal(d.CONCEPT_ID), tooltip: 'Malignant tumor of large intestineMalignant tumor of intestine'"">2"
+36715912,721696009,Primary adenocarcinoma of transverse colon,Clinical Finding,Standard,0,0,Condition,SNOMED,"$parents[1].showAncestorsModal(d.CONCEPT_ID), tooltip: 'Malignant tumor of large intestineMalignant tumor of intestine'"">2"
+36715911,721695008,Primary adenocarcinoma of ascending colon and right flexure,Clinical Finding,Standard,0,0,Condition,SNOMED,"$parents[1].showAncestorsModal(d.CONCEPT_ID), tooltip: 'Malignant tumor of large intestineMalignant tumor of intestine'"">2"
+36713361,6.81601E+14,Primary adenocarcinoma of ascending colon,Clinical Finding,Standard,0,0,Condition,SNOMED,"$parents[1].showAncestorsModal(d.CONCEPT_ID), tooltip: 'Malignant tumor of large intestineMalignant tumor of intestine'"">2"
+36683531,781382000,Malignant neoplasm of colon and/or rectum,Clinical Finding,Standard,0,714,Condition,SNOMED,"$parents[1].showAncestorsModal(d.CONCEPT_ID), tooltip: 'Malignant tumor of large intestineMalignant tumor of intestine'"">2"
+4322376,425178004,Adenocarcinoma of rectosigmoid junction,Clinical Finding,Standard,0,0,Condition,SNOMED,"$parents[1].showAncestorsModal(d.CONCEPT_ID), tooltip: 'Malignant tumor of large intestineMalignant tumor of intestine'"">2"
+4312240,425213009,"Carcinoma of colon, stage I",Clinical Finding,Standard,0,0,Condition,SNOMED,"$parents[1].showAncestorsModal(d.CONCEPT_ID), tooltip: ''"">0"
+4312001,422985007,"Carcinoma of colon, stage IV",Clinical Finding,Standard,0,0,Condition,SNOMED,"$parents[1].showAncestorsModal(d.CONCEPT_ID), tooltip: ''"">0"
+4310858,422375001,"Carcinoma of colon, stage III",Clinical Finding,Standard,0,0,Condition,SNOMED,"$parents[1].showAncestorsModal(d.CONCEPT_ID), tooltip: ''"">0"
+4307687,422581008,"Carcinoma of colon, stage II",Clinical Finding,Standard,0,0,Condition,SNOMED,"$parents[1].showAncestorsModal(d.CONCEPT_ID), tooltip: ''"">0"
+4256776,408645001,Adenocarcinoma of large intestine,Clinical Finding,Standard,0,0,Condition,SNOMED,"$parents[1].showAncestorsModal(d.CONCEPT_ID), tooltip: 'Malignant tumor of large intestineMalignant tumor of intestine'"">2"
+4247719,93683002,Primary malignant neoplasm of ascending colon,Clinical Finding,Standard,0,21,Condition,SNOMED,"$parents[1].showAncestorsModal(d.CONCEPT_ID), tooltip: 'Malignant tumor of large intestineMalignant tumor of intestine'"">2"
+4246125,93854002,Primary malignant neoplasm of large intestine,Clinical Finding,Standard,0,703,Condition,SNOMED,"$parents[1].showAncestorsModal(d.CONCEPT_ID), tooltip: 'Malignant tumor of large intestineMalignant tumor of intestine'"">2"
+4207183,312114001,Carcinoma of hepatic flexure,Clinical Finding,Standard,0,0,Condition,SNOMED,"$parents[1].showAncestorsModal(d.CONCEPT_ID), tooltip: 'Malignant tumor of large intestineMalignant tumor of intestine'"">2"
+4207182,312111009,Carcinoma of ascending colon,Clinical Finding,Standard,0,0,Condition,SNOMED,"$parents[1].showAncestorsModal(d.CONCEPT_ID), tooltip: 'Malignant tumor of large intestineMalignant tumor of intestine'"">2"
+4200514,301756000,Adenocarcinoma of sigmoid colon,Clinical Finding,Standard,0,0,Condition,SNOMED,"$parents[1].showAncestorsModal(d.CONCEPT_ID), tooltip: 'Malignant tumor of large intestineMalignant tumor of intestine'"">2"
+4198567,315058005,HNPCC - hereditary nonpolyposis colon cancer,Clinical Finding,Standard,0,0,Condition,SNOMED,"$parents[1].showAncestorsModal(d.CONCEPT_ID), tooltip: 'Malignant tumor of large intestineMalignant tumor of intestine'"">2"
+4193872,312115000,Carcinoma of splenic flexure,Clinical Finding,Standard,0,0,Condition,SNOMED,"$parents[1].showAncestorsModal(d.CONCEPT_ID), tooltip: 'Malignant tumor of large intestineMalignant tumor of intestine'"">2"
+4193871,312112002,Carcinoma of transverse colon,Clinical Finding,Standard,0,0,Condition,SNOMED,"$parents[1].showAncestorsModal(d.CONCEPT_ID), tooltip: 'Malignant tumor of large intestineMalignant tumor of intestine'"">2"
+4193165,312113007,Carcinoma of descending colon,Clinical Finding,Standard,0,0,Condition,SNOMED,
+4184850,413446001,Adenocarcinoma of cecum,Clinical Finding,Standard,0,0,Condition,SNOMED,
+4181344,363413005,Malignant tumor of splenic flexure,Clinical Finding,Standard,0,11,Condition,SNOMED,
+4180792,363414004,Malignant tumor of rectosigmoid junction,Clinical Finding,Standard,0,94,Condition,SNOMED,
+4180791,363407001,Malignant tumor of hepatic flexure,Clinical Finding,Standard,0,21,Condition,SNOMED,
+4180790,363406005,Malignant tumor of colon,Clinical Finding,Standard,0,581,Condition,SNOMED,
+4151260,269544008,Carcinoma of the rectosigmoid junction,Clinical Finding,Standard,0,0,Condition,SNOMED,
+4149847,269533000,Carcinoma of colon,Clinical Finding,Standard,0,0,Condition,SNOMED,
+4116240,255081007,Carcinoma of cecum,Clinical Finding,Standard,0,0,Condition,SNOMED,
+4115028,285312008,Carcinoma of sigmoid colon,Clinical Finding,Standard,0,0,Condition,SNOMED,
+4110575,254582000,Adenocarcinoma of rectum,Clinical Finding,Standard,0,0,Condition,SNOMED,
+4095430,187760008,"Malignant neoplasm of rectum, rectosigmoid junction and anus",Clinical Finding,Standard,0,0,Condition,SNOMED,
+4089661,187757001,"Malignant neoplasm, overlapping lesion of colon",Clinical Finding,Standard,0,0,Condition,SNOMED,
+764981,9.8981E+13,Primary malignant neoplasm of ileocecal valve,Clinical Finding,Standard,0,0,Condition,SNOMED,
+443398,363508008,Malignant tumor of intestine,Clinical Finding,Standard,0,810,Condition,SNOMED,
+443396,363510005,Malignant tumor of large intestine,Clinical Finding,Standard,0,788,Condition,SNOMED,
+443391,363350007,Malignant tumor of cecum,Clinical Finding,Standard,58,58,Condition,SNOMED,
+443390,363351006,Malignant tumor of rectum,Clinical Finding,Standard,0,227,Condition,SNOMED,
+443384,363408006,Malignant tumor of transverse colon,Clinical Finding,Standard,0,40,Condition,SNOMED,
+443382,363409003,Malignant tumor of descending colon,Clinical Finding,Standard,0,39,Condition,SNOMED,
+443381,363410008,Malignant tumor of sigmoid colon,Clinical Finding,Standard,0,138,Condition,SNOMED,
+441800,93771007,Primary malignant neoplasm of descending colon,Clinical Finding,Standard,28,39,Condition,SNOMED,
+438979,93826009,Primary malignant neoplasm of hepatic flexure of colon,Clinical Finding,Standard,21,21,Condition,SNOMED,
+438699,93980002,Primary malignant neoplasm of rectosigmoid junction,Clinical Finding,Standard,94,94,Condition,SNOMED,
+438090,109839004,"Overlapping malignant neoplasm of rectum, anus and anal canal",Clinical Finding,Standard,6,6,Condition,SNOMED,
+437798,94072004,Primary malignant neoplasm of splenic flexure of colon,Clinical Finding,Standard,11,11,Condition,SNOMED,
+436635,94006002,Primary malignant neoplasm of sigmoid colon,Clinical Finding,Standard,44,138,Condition,SNOMED,
+435754,363412000,Malignant tumor of ascending colon,Clinical Finding,Standard,27,48,Condition,SNOMED,
+432837,371977004,Primary malignant neoplasm of cecum,Clinical Finding,Standard,0,0,Condition,SNOMED,
+432257,94105000,Primary malignant neoplasm of transverse colon,Clinical Finding,Standard,8,40,Condition,SNOMED,
+197500,93761005,Primary malignant neoplasm of colon,Clinical Finding,Standard,312,554,Condition,SNOMED,
+79740,109838007,Overlapping malignant neoplasm of colon,Clinical Finding,Standard,36,36,Condition,SNOMED,
+74582,93984006,Primary malignant neoplasm of rectum,Clinical Finding,Standard,127,227,Condition,SNOMED,
