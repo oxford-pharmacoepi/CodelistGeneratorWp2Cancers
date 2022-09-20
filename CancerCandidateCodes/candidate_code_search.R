@@ -234,13 +234,20 @@ toc()
 # The concept sets were exported to ATLAS and converted to csv files
 
 # breast
-# colorectal cancer
+# colorectal cancer (specific and broad)
 # lung
 # prostate
 
 # read in csvs for remaining cancers candidate codes
 df <- list.files(path = here("candidate_codes_from_collabs"), pattern = "*.csv", full.names=TRUE) %>% 
   map(read_csv)
+
+
+# df <- list.files(path = here("Github",
+#                              "CodelistGeneratorWp2Cancers",
+#                              "CancerCandidateCodes",
+#                              "candidate_codes_from_collabs"), pattern = "*.csv", full.names=TRUE) %>% 
+#   map(read_csv)
 
 
 #only include snomed codes for review
@@ -252,6 +259,8 @@ df[[3]] <- df[[3]] %>%
   filter(Vocabulary == "SNOMED")
 df[[4]] <- df[[4]] %>%
   filter(Vocabulary == "SNOMED")
+df[[5]] <- df[[5]] %>%
+  filter(Vocabulary == "SNOMED")
 
 
 # save to excel
@@ -260,6 +269,7 @@ candidateCodelists <- list("liver_cancer_codes" = liver_codes1,
                            "headneck_cancer_codes" = headneck_codes1, 
                            "breast_cancer_codes" =  df[[1]],
                            "colorectal_cancer_codes" = df[[2]], 
-                           "lung_cancer_codes" =  df[[3]],
-                           "prostate_cancer_codes" = df[[4]])
+                           "colorectal_cancer_codes_BROAD" = df[[3]], 
+                           "lung_cancer_codes" =  df[[4]],
+                           "prostate_cancer_codes" = df[[5]])
 write.xlsx(candidateCodelists, file = "cancer_candidate_codes.xlsx")
