@@ -276,14 +276,6 @@ toc()
 df <- list.files(path = here("candidate_codes_from_collabs"), pattern = "*.csv", full.names=TRUE) %>% 
   map(read_csv)
 
-
-# df <- list.files(path = here("Github",
-#                              "CodelistGeneratorWp2Cancers",
-#                              "CancerCandidateCodes",
-#                              "candidate_codes_from_collabs"), pattern = "*.csv", full.names=TRUE) %>% 
-#   map(read_csv)
-
-
 #only include snomed codes for review
 df[[1]] <- df[[1]] %>%
   filter(Vocabulary == "SNOMED")
