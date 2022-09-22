@@ -131,7 +131,6 @@ liver_codes1<-getCandidateCodes(keywords=c( "malignant neoplasm of liver") ,
 toc()
 
 
-
 # create codelist for STOMACH CANCER ---------------------------------------
 # criteria:
 # Malignant cancer only
