@@ -14,3 +14,4 @@ This project contains phenotyping for the following incident primary maligicant 
 - Stomach
 - Head/neck
 - Prostate
+- Pancreatic
