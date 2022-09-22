@@ -227,6 +227,41 @@ headneck_codes1<-getCandidateCodes(keywords=c(   "malignant tumor of lip" ,
 
 toc()
 
+# create codelist for PANCREATIC CANCER ---------------------------------------
+# criteria:
+# Malignant cancer only
+# No codes for benign/ in situ, lymphoma, melanoma, carcnoids (neuroendocrine)
+# No codes for secondary cancer
+
+Sys.time()
+
+tic()
+pancreatic_codes1<-getCandidateCodes(keywords=c( "malignant tumor of pancreas") ,
+                                domains="Condition",
+                                exclude = c("risk",
+                                            "fear",
+                                            "benign", 
+                                            "screening",
+                                            "suspected",
+                                            "secondary",
+                                            "in situ",
+                                            "uterine body",
+                                            "neuroendocrine",
+                                            "melanoma",
+                                            "lymphoma",
+                                            "carcinoid" ),
+                                standardConcept = standardConceptConditions,
+                                searchInSynonyms = searchInSynonymsConditions,
+                                searchViaSynonyms = searchViaSynonymsConditions,
+                                searchNonStandard = searchNonStandardConditions,
+                                includeDescendants = includeDescendantsConditions,
+                                includeAncestor = includeAncestorConditions,
+                                db=db,
+                                vocabularyDatabaseSchema =  vocabulary_database_schema)
+
+toc()
+
+
 
 # create codelist for BREAST/COLORECTAL/LUNG/PROSTATE CANCER ---------------------------------------
 
@@ -267,6 +302,7 @@ df[[5]] <- df[[5]] %>%
 candidateCodelists <- list("liver_cancer_codes" = liver_codes1, 
                            "stomach_cancer_codes" = stomach_codes1,
                            "headneck_cancer_codes" = headneck_codes1, 
+                           "pancreatic_cancer_codes" = pancreatic_codes1,
                            "breast_cancer_codes" =  df[[1]],
                            "colorectal_cancer_codes" = df[[2]], 
                            "colorectal_cancer_codes_BROAD" = df[[3]], 
